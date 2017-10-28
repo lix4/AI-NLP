@@ -1,5 +1,4 @@
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.util.ArrayList;
@@ -16,6 +15,8 @@ import edu.stanford.nlp.dcoref.Document;
 import edu.stanford.nlp.ling.*;
 import edu.stanford.nlp.ling.CoreAnnotations.*;
 import edu.stanford.nlp.pipeline.*;
+import edu.stanford.nlp.process.CoreLabelTokenFactory;
+import edu.stanford.nlp.process.PTBTokenizer;
 import edu.stanford.nlp.semgraph.SemanticGraph;
 import edu.stanford.nlp.semgraph.SemanticGraphCoreAnnotations.CollapsedCCProcessedDependenciesAnnotation;
 import edu.stanford.nlp.semgraph.SemanticGraphEdge;
@@ -38,24 +39,49 @@ public class NLP {
 //        props.put("annotators", "tokenize, ssplit, pos, lemma");
 
 
-        StanfordCoreNLP coreNLP = new StanfordCoreNLP(props);
-        File foo = new File("lincoln.txt");
-        Collection<File> files = new ArrayList<File>();
-        files.add(foo);
-        try {
-            coreNLP.processFiles(files, true);
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
+        StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
+//        File foo = new File("lincoln.txt");
+//        Collection<File> files = new ArrayList<File>();
+//        files.add(foo);
+//        try {
+//            coreNLP.processFiles(files, true);
+//        } catch (IOException e) {
+//            // TODO Auto-generated catch block
+//            e.printStackTrace();
+//        }
+
 
 //        StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
         // read some text in the text variable
 //        String text = "Pick up that block.";
 //        String text = "In 1921, Einstein received the Nobel Prize for his original work on the photoelectric effect.";
 //        String text = "Did Einstein receive the Nobel Prize?";
-        String text = "Mary saw a ring through the window and asked John for it.";
+//        String text = "Mary saw a ring through the window and asked John for it.";
         // create an empty Annotation just with the given text
+        InputStream is = null;
+        try {
+            is = new FileInputStream("src/lincoln.txt");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        BufferedReader buf = new BufferedReader(new InputStreamReader(is));
+        String line = null;
+        try {
+            line = buf.readLine();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        StringBuilder sb = new StringBuilder();
+        while (line != null) {
+            sb.append(line).append("\n");
+            try {
+                line = buf.readLine();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        String text = sb.toString();
+        System.out.println(text);
         Annotation document = new Annotation(text);
 
         // run all Annotators on this text
@@ -64,6 +90,7 @@ public class NLP {
         // these are all the sentences in this document
         // a CoreMap is essentially a Map that uses class objects as keys and has values with custom types
         List<CoreMap> sentences = document.get(SentencesAnnotation.class);
+        System.out.println(sentences.size());
 
         for (CoreMap sentence : sentences) {
             // traversing the words in the current sentence
@@ -105,9 +132,8 @@ public class NLP {
                 default:
                     System.out.println("Cannot identify sentence structure.");
             }
+
             // next step, need to identify further components of sentence
-
-
 //          IndexedWord subject = null;
 //          String quantifier = null;
 //          Boolean goodToGo = false;
