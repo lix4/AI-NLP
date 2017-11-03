@@ -39,53 +39,55 @@ public class NLP {
 //        props.put("annotators", "tokenize, ssplit, pos, lemma");
 
 
-        StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
-//        File foo = new File("lincoln.txt");
-//        Collection<File> files = new ArrayList<File>();
-//        files.add(foo);
-//        try {
-//            coreNLP.processFiles(files, true);
-//        } catch (IOException e) {
+        StanfordCoreNLP coreNLP = new StanfordCoreNLP(props);
+        File foo = new File("src/lincoln.txt");
+        Collection<File> files = new ArrayList<File>();
+        files.add(foo);
+        try {
+            System.out.println("Processing");
+            coreNLP.processFiles(files, false);
+            System.out.println("Finished");
+        } catch (IOException e) {
 //            // TODO Auto-generated catch block
-//            e.printStackTrace();
-//        }
+            e.printStackTrace();
+        }
 
 
 //        StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
         // read some text in the text variable
-//        String text = "Pick up that block.";
+        String text = "Pick up that block.";
 //        String text = "In 1921, Einstein received the Nobel Prize for his original work on the photoelectric effect.";
 //        String text = "Did Einstein receive the Nobel Prize?";
 //        String text = "Mary saw a ring through the window and asked John for it.";
         // create an empty Annotation just with the given text
-        InputStream is = null;
-        try {
-            is = new FileInputStream("src/lincoln.txt");
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        BufferedReader buf = new BufferedReader(new InputStreamReader(is));
-        String line = null;
-        try {
-            line = buf.readLine();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        StringBuilder sb = new StringBuilder();
-        while (line != null) {
-            sb.append(line).append("\n");
-            try {
-                line = buf.readLine();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-        String text = sb.toString();
-        System.out.println(text);
+//        InputStream is = null;
+//        try {
+//            is = new FileInputStream("src/lincoln.txt");
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        }
+//        BufferedReader buf = new BufferedReader(new InputStreamReader(is));
+//        String line = null;
+//        try {
+//            line = buf.readLine();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        StringBuilder sb = new StringBuilder();
+//        while (line != null) {
+//            sb.append(line).append("\n");
+//            try {
+//                line = buf.readLine();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//        }
+//        String text = sb.toString();
+//        System.out.println(text);
         Annotation document = new Annotation(text);
 
         // run all Annotators on this text
-        pipeline.annotate(document);
+        coreNLP.annotate(document);
 
         // these are all the sentences in this document
         // a CoreMap is essentially a Map that uses class objects as keys and has values with custom types
