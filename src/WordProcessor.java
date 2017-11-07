@@ -2,6 +2,39 @@ import java.util.Scanner;
 
 
 public class WordProcessor {
+	
+	/**
+	 * Performs stemming on each word in a sentence
+	 * @param sentence
+	 * @return the given sentence with each word replaced with its stem
+	 */
+	public static String stemSentence(String sentence) {
+		// split the sentence into words
+		String[] words = sentence.split(" ");
+		
+		for (int i=0; i < words.length; i++) {
+			//temporarily remove non-letter symbols from the ends of the word
+			String pre = "", suff = "", word = words[i];
+			while (word.length() > 0 && !Character.isAlphabetic(word.charAt(0))) {
+				pre += word.substring(0, 1);
+				word = word.substring(1);
+			}
+			while (word.length() > 0 && !Character.isAlphabetic(word.charAt(word.length()-1))) {
+				suff += word.substring(word.length()-1);
+				word = word.substring(0, word.length()-1);
+			}
+			
+			String stem = getStem(word);
+			words[i] = pre + stem + suff;
+		}
+		
+		// reconstruct the sentence
+		String out = words[0];
+		for (int i=1; i < words.length; i++) {
+			out += " " + words[i];
+		}
+		return out;
+	}
 
 	/**
 	 * Determines the stem of a given word using a partial implementation of
@@ -11,6 +44,18 @@ public class WordProcessor {
 	 * @return the stem of word
 	 */
 	public static String getStem(String word) {
+		String stem = word;
+		stem = step1Stemming(stem);
+		stem = step2Stemming(stem);
+		return stem;
+	}
+	
+	/**
+	 * Performs step 1 of Porter's algorithm
+	 * @param word
+	 * @return
+	 */
+	public static String step1Stemming(String word) {
 		String stem = word;
 		// step 1a
 		if (suffixIgnoreCase(stem, "sses")) {
@@ -67,6 +112,100 @@ public class WordProcessor {
 		}
 		
 		return stem;
+	}
+	
+	/**
+	 * Performs step 2 of Porter's algorithm
+	 * @param word
+	 * @return
+	 */
+	public static String step2Stemming(String word) {
+		int len = word.length();
+		
+		if (len <= 4) return word;
+		
+		// preprocess to make calculating measures easier
+		boolean[] vowels = new boolean[word.length()];
+		for (int i=0; i < word.length(); i++) {
+			vowels[i] = vowelAt(word, i);
+		}
+		
+		char penultimate = word.toLowerCase().charAt(word.length()-2);
+		if (penultimate == 'a') {
+			if (suffixIgnoreCase(word, "ational") && 
+					positiveMeasure(vowels, word.length()-7)) {
+				return word.substring(0, word.length()-5) + "e";
+			} else if (suffixIgnoreCase(word, "tional") && positiveMeasure(vowels, word.length()-6)) {
+				return word.substring(0, word.length()-2);
+			}
+		} else if (penultimate == 'c') {
+			if (suffixIgnoreCase(word, "enci") && 
+					positiveMeasure(vowels, word.length()-4)) {
+				return word.substring(0, word.length()-1) + "e";
+			} else if (suffixIgnoreCase(word, "anci") && 
+					positiveMeasure(vowels, word.length()-4)) {
+				return word.substring(0, word.length()-1) + "e";
+			}
+		} else if (penultimate == 'e') {
+			if (suffixIgnoreCase(word, "izer") && 
+					positiveMeasure(vowels, len-4)) {
+				return word.substring(0, len-1);
+			}
+		} else if (penultimate == 'l') {
+			if (suffixIgnoreCase(word, "abli") && 
+					positiveMeasure(vowels, word.length()-4)) {
+				return word.substring(0, word.length()-1) + "e";
+			} else if (suffixIgnoreCase(word, "alli") && 
+					positiveMeasure(vowels, word.length()-4)) {
+				return word.substring(0, word.length()-2);
+			} else if (suffixIgnoreCase(word, "entli") && 
+					positiveMeasure(vowels, word.length()-5)) {
+				return word.substring(0, word.length()-2);
+			} else if (suffixIgnoreCase(word, "eli") && 
+					positiveMeasure(vowels, len-3)) {
+				return word.substring(0, len-2);
+			} else if (suffixIgnoreCase(word, "ousli") && 
+					positiveMeasure(vowels, len-5)) {
+				return word.substring(0, len-2);
+			}
+		} else if (penultimate == 'o') {
+			if (suffixIgnoreCase(word, "ization") && 
+					positiveMeasure(vowels, len-7)) {
+				return word.substring(0, len-5) + "e";
+			} else if (suffixIgnoreCase(word, "ation") && 
+					positiveMeasure(vowels, len-5)) {
+				return word.substring(0, len-3) + "e";
+			} else if (suffixIgnoreCase(word, "ator") && 
+					positiveMeasure(vowels, len-4)) {
+				return word.substring(0, len-2) + "e";
+			}
+		} else if (penultimate == 's') {
+			if (suffixIgnoreCase(word, "alism") && 
+					positiveMeasure(vowels, len-5)) {
+				return word.substring(0, len-3);
+			} else if (suffixIgnoreCase(word, "iveness") && 
+					positiveMeasure(vowels, len-7)) {
+				return word.substring(0, len-4);
+			} else if (suffixIgnoreCase(word, "fulness") && 
+					positiveMeasure(vowels, len-7)) {
+				return word.substring(0, len-4);
+			} else if (suffixIgnoreCase(word, "ousness") && 
+					positiveMeasure(vowels, len-7)) {
+				return word.substring(0, len-4);
+			}
+		} else if (penultimate == 't') {
+			if (suffixIgnoreCase(word, "aliti") && 
+					positiveMeasure(vowels, len-5)) {
+				return word.substring(0, len-3);
+			} else if (suffixIgnoreCase(word, "iviti") && 
+					positiveMeasure(vowels, len-5)) {
+				return word.substring(0, len-3) + "e";
+			} else if (suffixIgnoreCase(word, "biliti") && 
+					positiveMeasure(vowels, len-6)) {
+				return word.substring(0, len-5) + "le";
+			}
+		}
+		return word;
 	}
 	
 	/**
@@ -150,10 +289,10 @@ public class WordProcessor {
 		Scanner scanner = new Scanner(System.in);
 		String input = "q";
 		do {
-			System.out.print("Enter a word (or Q to quit):\n");
+			System.out.print("Enter a sentence (or Q to quit):\n");
 			input = scanner.nextLine();
 			if (!input.equalsIgnoreCase("q")) {
-				System.out.print("Stemmed input: " + getStem(input) + "\n");
+				System.out.print("Stemmed input: " + stemSentence(input) + "\n");
 			}
 		} while (!input.equalsIgnoreCase("q"));
 		
