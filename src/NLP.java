@@ -56,7 +56,10 @@ public class NLP {
 //        String text = "Mary saw a ring through the window and asked John for it.";
 
         // create an empty Annotation just with the given text
+        //Annotation document = new Annotation(text);
 //        System.out.println(text);
+        
+        
         InputStream is = null;
         try {
             is = new FileInputStream("src/lincoln.txt");
@@ -80,7 +83,8 @@ public class NLP {
             }
         }
         String text = sb.toString();
-
+		
+        
         Document doc = new Document(text);
         for (Sentence sent : doc.sentences()) {
             System.out.println();
@@ -124,12 +128,13 @@ public class NLP {
                 String type = root.tag();
                 System.out.println("type: " + type);
                 String generalType = type.substring(0, 2);
+                Info extracted = null;
                 switch (generalType) {
                     case "VB":
-                        processVerbPhrase(dependencies, root, sent.text(), infoMap);
+                        extracted = processVerbPhrase(dependencies, root);
                         break;
                     case "NN":
-                        processNounPhrase(dependencies, root, sent.text(), infoMap);
+                        extracted = processNounPhrase(dependencies, root);
                         break;
                     case "DT":
                         processDeterminer(dependencies, root);
@@ -137,6 +142,7 @@ public class NLP {
                     default:
                         System.out.println("Cannot identify sentence structure.");
                 }
+                //infoMap.put(sent.text(), extracted);
 
 
             }
@@ -159,7 +165,7 @@ public class NLP {
     }
 
     //Processes: {That, this, the} {block, sphere}
-    static public Map<String, Info> processNounPhrase(SemanticGraph dependencies, IndexedWord root, String sent, Map<String, Info> infoMap) {
+    static public Info processNounPhrase(SemanticGraph dependencies, IndexedWord root) {
 //        List<Pair<GrammaticalRelation, IndexedWord>> s = dependencies.childPairs(root);
 
 
@@ -175,6 +181,7 @@ public class NLP {
         System.out.println("Identity of object: " + root.originalText().toLowerCase());
         String object = root.originalText().toLowerCase();
         System.out.println("Type of object: " + p.get(0).second.originalText().toLowerCase());
+        
         for (Pair<GrammaticalRelation, IndexedWord> item : p) {
             if (item.first.toString().equals("cop")) {
                 System.out.println("Predicate: " + item.second.originalText());
@@ -186,20 +193,6 @@ public class NLP {
             }
         }
 
-//        List<Pair<GrammaticalRelation, IndexedWord>> s = dependencies.childPairs(predicate);
-//        for (Pair<GrammaticalRelation, IndexedWord> item : s) {
-//            if (item.first.toString().equals("nsubj")) {
-//                subject = item.second;
-//            }
-//            if (item.first.toString().equals("cop") && (item.second.originalText().toLowerCase().equals("are") || item.second.originalText().toLowerCase().equals("is"))) {
-//                goodToGo = true;
-//            }
-//            if (item.first.toString().equals("neg")) {
-//                PredicateLevelNegation = true;
-//            }
-//        }
-
-
         List<Pair<GrammaticalRelation, IndexedWord>> t = dependencies.childPairs(subject);
         for (Pair<GrammaticalRelation, IndexedWord> item : t) {
             if (item.first.toString().equals("det")) {
@@ -210,30 +203,11 @@ public class NLP {
             }
         }
 
-
-//        if (goodToGo) {
-//            String output = "";
-//            if (TopLevelNegation) output += "not ";
-//            if (quantifier != null) output += quantifier + "(x): " + subject.lemma().toString() + "(x) ^ ";
-//            if (PredicateLevelNegation) output += "not(";
-//            if (quantifier == null) {
-//                output += predicate.originalText() + "(" + subject.lemma().toString() + ")";
-//            } else {
-//                output += predicate.originalText() + "(x)";
-//            }
-//            if (PredicateLevelNegation) output += ")";
-//
-//            System.out.println(output);
-//        } else {
-//            System.out.println("Could not translate sentence.");
-//        }
-
-        infoMap.put(sent, new Info(subject.originalText(), predicate.originalText(), object));
-        return infoMap;
+        return new Info(subject.originalText(), predicate.originalText(), object);
     }
 
     // Processes: {Pick up, put down} {that, this} {block, sphere}
-    static public Map<String, Info> processVerbPhrase(SemanticGraph dependencies, IndexedWord root, String sent, Map<String, Info> infoMap) {
+    static public Info processVerbPhrase(SemanticGraph dependencies, IndexedWord root) {
         List<Pair<GrammaticalRelation, IndexedWord>> s = dependencies.childPairs(root);
         Pair<GrammaticalRelation, IndexedWord> prt = s.get(0);
         Pair<GrammaticalRelation, IndexedWord> dobj = s.get(1);
@@ -241,36 +215,35 @@ public class NLP {
         List<Pair<GrammaticalRelation, IndexedWord>> newS = dependencies.childPairs(dobj.second);
 
 
-        System.out.println("Action: " + root.originalText().toLowerCase() + prt.second.originalText().toLowerCase());
-        System.out.println("Type of object: " + dobj.second.originalText().toLowerCase());
-        System.out.println("Identity of object: " + newS.get(0).second.originalText().toLowerCase());
+//        System.out.println("Action: " + root.originalText().toLowerCase() + prt.second.originalText().toLowerCase());
+//        System.out.println("Type of object: " + dobj.second.originalText().toLowerCase());
+//        System.out.println("Identity of object: " + newS.get(0).second.originalText().toLowerCase());
 
-        IndexedWord object = newS.get(0).second;
-        IndexedWord subject = null;
+        String object = "";
+        String subject = "";
 
-        IndexedWord predicate = root;
+        String predicate = root.originalText();
         String quantifier = null;
         Boolean TopLevelNegation = false;
         Boolean PredicateLevelNegation = false;
 
         for (Pair<GrammaticalRelation, IndexedWord> item : s) {
             if (item.first.toString().equals("nsubj")) {
-                subject = item.second;
+                subject = item.second.originalText();
 
             }
             if (item.first.toString().equals("neg")) {
                 PredicateLevelNegation = true;
             }
-            if(item.first.toString().equals("conj:and")){
-
+            if(item.first.toString().equals("dobj")){
+            	object = item.second.originalText();
             }
         }
 
-
-        System.out.println(subject.originalText());
-        System.out.println(predicate.originalText());
-        infoMap.put(sent, new Info(subject.originalText(), predicate.originalText(), object.originalText()));
-        return infoMap;
+        System.out.println("Subject: " + subject);
+        System.out.println("Action: " + predicate);
+        System.out.println("Object: " + object);
+        return new Info(subject, predicate, object);
     }
 
 }
