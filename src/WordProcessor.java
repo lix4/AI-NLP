@@ -4,11 +4,11 @@ import java.util.Scanner;
 public class WordProcessor {
 	
 	/**
-	 * Performs stemming on each word in a sentence
+	 * Performs stemming on each word in a phrase
 	 * @param sentence
-	 * @return the given sentence with each word replaced with its stem
+	 * @return the given phrase with each word replaced with its stem
 	 */
-	public static String stemSentence(String sentence) {
+	public static String stemPhrase(String sentence) {
 		// split the sentence into words
 		String[] words = sentence.split(" ");
 		
@@ -292,7 +292,7 @@ public class WordProcessor {
 			System.out.print("Enter a sentence (or Q to quit):\n");
 			input = scanner.nextLine();
 			if (!input.equalsIgnoreCase("q")) {
-				System.out.print("Stemmed input: " + stemSentence(input) + "\n");
+				System.out.print("Stemmed input: " + stemPhrase(input) + "\n");
 			}
 		} while (!input.equalsIgnoreCase("q"));
 		

@@ -124,26 +124,8 @@ public class NLP {
 
                 // get root of parse graph
                 IndexedWord root = dependencies.getFirstRoot();
-                // type of root
-                String type = root.tag();
-                System.out.println("type: " + type);
-                String generalType = type.substring(0, 2);
-                Info extracted = null;
-                switch (generalType) {
-                    case "VB":
-                        extracted = processVerbPhrase(dependencies, root);
-                        break;
-                    case "NN":
-                        extracted = processNounPhrase(dependencies, root);
-                        break;
-                    case "DT":
-                        processDeterminer(dependencies, root);
-                        break;
-                    case "JJ":
-//                        processAdjectivePhrase();
-                    default:
-                        System.out.println("Cannot identify sentence structure.");
-                }
+                
+                Info extracted = processPhrase(dependencies, root);
                 //infoMap.put(sent.text(), extracted);
 
 
@@ -157,6 +139,34 @@ public class NLP {
             System.out.println();
             System.out.println(graph);
         }
+    }
+    
+    public static Info processPhrase(SemanticGraph dependencies, IndexedWord root) {
+    	// not sure how this would happen, but it seems to be a problem
+    	if (root instanceof Info) {
+    		return null;
+    	}
+    	
+    	// type of root
+    	String type = root.tag();
+        System.out.println("type: " + type);
+        String generalType = type.substring(0, 2);
+        switch (generalType) {
+            case "VB":
+                return processVerbPhrase(dependencies, root);
+            case "NN":
+                return processNounPhrase(dependencies, root);
+            case "DT":
+//                processDeterminer(dependencies, root);
+                break;
+            case "JJ":
+//                processAdjectivePhrase();
+            	break;
+            default:
+                System.out.println("Cannot identify sentence structure.");
+                return null;
+        }
+        return null;
     }
 
     static public void processAdjectivePhrase(SemanticGraph dependencies, IndexedWord root) {
@@ -194,9 +204,16 @@ public class NLP {
                 System.out.println("Predicate: " + item.second.originalText());
                 predicate = item.second;
             }
-            if (item.first.toString().equals("nsubj")) {
+            
+            // noun subject
+            if (item.first.toString().startsWith("nsubj")) {
                 subject = item.second;
                 System.out.println("Subject: " + subject.originalText());
+            }
+            
+            // clausal subject
+            if (item.first.toString().startsWith("csubj")) {
+            	subject = processPhrase(dependencies, item.second);
             }
         }
 
@@ -204,15 +221,15 @@ public class NLP {
             System.out.println("There is no subject");
             return new Info(subject, predicate, object);
         } else {
-            List<Pair<GrammaticalRelation, IndexedWord>> t = dependencies.childPairs(subject);
-            for (Pair<GrammaticalRelation, IndexedWord> item : t) {
-                if (item.first.toString().equals("det")) {
-                    quantifier = item.second.lemma().toString();
-                }
-                if (item.first.toString().equals("neg")) {
-                    TopLevelNegation = true;
-                }
-            }
+//            List<Pair<GrammaticalRelation, IndexedWord>> t = dependencies.childPairs(subject);
+//            for (Pair<GrammaticalRelation, IndexedWord> item : t) {
+//                if (item.first.toString().equals("det")) {
+//                    quantifier = item.second.lemma().toString();
+//                }
+//                if (item.first.toString().equals("neg")) {
+//                    TopLevelNegation = true;
+//                }
+//            }
         }
 
         return new Info(subject, predicate, object);
@@ -222,9 +239,9 @@ public class NLP {
     static public Info processVerbPhrase(SemanticGraph dependencies, IndexedWord root) {
         List<Pair<GrammaticalRelation, IndexedWord>> s = dependencies.childPairs(root);
         Pair<GrammaticalRelation, IndexedWord> prt = s.get(0);
-        Pair<GrammaticalRelation, IndexedWord> dobj = s.get(1);
+//        Pair<GrammaticalRelation, IndexedWord> dobj = s.get(1);
 
-        List<Pair<GrammaticalRelation, IndexedWord>> newS = dependencies.childPairs(dobj.second);
+//        List<Pair<GrammaticalRelation, IndexedWord>> newS = dependencies.childPairs(dobj.second);
 
 
 //        System.out.println("Action: " + root.originalText().toLowerCase() + prt.second.originalText().toLowerCase());
@@ -240,15 +257,39 @@ public class NLP {
         Boolean PredicateLevelNegation = false;
 
         for (Pair<GrammaticalRelation, IndexedWord> item : s) {
-            if (item.first.toString().equals("nsubj")) {
+        	// noun subject
+            if (item.first.toString().startsWith("nsubj")) {
                 subject = item.second;
-
             }
+            
+            // clausal subject
+            if (item.first.toString().startsWith("csubj")) {
+            	subject = processPhrase(dependencies, item.second);
+            }
+            
             if (item.first.toString().equals("neg")) {
                 PredicateLevelNegation = true;
             }
-            if (item.first.toString().equals("dobj")) {
+            
+            // noun object
+            if (item.first.toString().equals("dobj") || item.first.toString().equals("iobj")) {
                 object = item.second;
+            }
+            
+            // adjective object
+            if (object == null &&(item.first.toString().equals("acomp") || 
+            		item.first.toString().equals("xcomp"))) {
+            	object = item.second;
+            }
+            
+            // clausal object
+            if (item.first.toString().equals("ccomp")) {
+            	object = processPhrase(dependencies, item.second);
+            }
+            
+            // modifier as object
+            if (object == null && item.first.toString().startsWith("nmod")) {
+            	object = item.second;
             }
         }
 
@@ -257,5 +298,7 @@ public class NLP {
         System.out.println("Object: " + object);
         return new Info(subject, predicate, object);
     }
+    
+    
 
 }

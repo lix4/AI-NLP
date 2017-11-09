@@ -1,6 +1,7 @@
 import edu.stanford.nlp.ling.IndexedWord;
 
-public class Info {
+// extending IndexedWord is an ugly way of getting a recursive structure, but hopefully it works.
+public class Info extends IndexedWord {
     private IndexedWord subject;
     private IndexedWord predicate;
     private IndexedWord object;
@@ -33,5 +34,14 @@ public class Info {
 
     public void setObject(IndexedWord object) {
         this.object = object;
+    }
+    
+    public String toString() {
+    	return "{Subject: " + subject + ", Predicate: " + predicate + 
+    			", Object: " + object + "}";
+    }
+    
+    public String originalText() {
+    	return this.toString();
     }
 }
