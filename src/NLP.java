@@ -58,8 +58,8 @@ public class NLP {
         // create an empty Annotation just with the given text
         //Annotation document = new Annotation(text);
 //        System.out.println(text);
-        
-        
+
+
         InputStream is = null;
         try {
             is = new FileInputStream("src/lincoln.txt");
@@ -83,9 +83,9 @@ public class NLP {
             }
         }
         String text = sb.toString();
-		
         
         Document doc = new Document(text);
+        System.out.println(doc.sentences().size());
         for (Sentence sent : doc.sentences()) {
             System.out.println();
             System.out.println("current sentence:");
@@ -139,6 +139,8 @@ public class NLP {
                     case "DT":
                         processDeterminer(dependencies, root);
                         break;
+                    case "JJ":
+//                        processAdjectivePhrase();
                     default:
                         System.out.println("Cannot identify sentence structure.");
                 }
@@ -155,6 +157,11 @@ public class NLP {
             System.out.println();
             System.out.println(graph);
         }
+    }
+
+    static public void processAdjectivePhrase(SemanticGraph dependencies, IndexedWord root) {
+        List<Pair<GrammaticalRelation, IndexedWord>> s = dependencies.childPairs(root);
+
     }
 
     // Processes: {This, that} one?
@@ -179,9 +186,9 @@ public class NLP {
         IndexedWord predicate = null;
         List<Pair<GrammaticalRelation, IndexedWord>> p = dependencies.childPairs(root);
         System.out.println("Identity of object: " + root.originalText().toLowerCase());
-        String object = root.originalText().toLowerCase();
+        IndexedWord object = root;
         System.out.println("Type of object: " + p.get(0).second.originalText().toLowerCase());
-        
+
         for (Pair<GrammaticalRelation, IndexedWord> item : p) {
             if (item.first.toString().equals("cop")) {
                 System.out.println("Predicate: " + item.second.originalText());
@@ -193,17 +200,22 @@ public class NLP {
             }
         }
 
-        List<Pair<GrammaticalRelation, IndexedWord>> t = dependencies.childPairs(subject);
-        for (Pair<GrammaticalRelation, IndexedWord> item : t) {
-            if (item.first.toString().equals("det")) {
-                quantifier = item.second.lemma().toString();
-            }
-            if (item.first.toString().equals("neg")) {
-                TopLevelNegation = true;
+        if (subject == null) {
+            System.out.println("There is no subject");
+            return new Info(subject, predicate, object);
+        } else {
+            List<Pair<GrammaticalRelation, IndexedWord>> t = dependencies.childPairs(subject);
+            for (Pair<GrammaticalRelation, IndexedWord> item : t) {
+                if (item.first.toString().equals("det")) {
+                    quantifier = item.second.lemma().toString();
+                }
+                if (item.first.toString().equals("neg")) {
+                    TopLevelNegation = true;
+                }
             }
         }
 
-        return new Info(subject.originalText(), predicate.originalText(), object);
+        return new Info(subject, predicate, object);
     }
 
     // Processes: {Pick up, put down} {that, this} {block, sphere}
@@ -219,24 +231,24 @@ public class NLP {
 //        System.out.println("Type of object: " + dobj.second.originalText().toLowerCase());
 //        System.out.println("Identity of object: " + newS.get(0).second.originalText().toLowerCase());
 
-        String object = "";
-        String subject = "";
+        IndexedWord object = null;
+        IndexedWord subject = null;
 
-        String predicate = root.originalText();
+        IndexedWord predicate = root;
         String quantifier = null;
         Boolean TopLevelNegation = false;
         Boolean PredicateLevelNegation = false;
 
         for (Pair<GrammaticalRelation, IndexedWord> item : s) {
             if (item.first.toString().equals("nsubj")) {
-                subject = item.second.originalText();
+                subject = item.second;
 
             }
             if (item.first.toString().equals("neg")) {
                 PredicateLevelNegation = true;
             }
-            if(item.first.toString().equals("dobj")){
-            	object = item.second.originalText();
+            if (item.first.toString().equals("dobj")) {
+                object = item.second;
             }
         }
 
