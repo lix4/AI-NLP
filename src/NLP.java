@@ -141,12 +141,7 @@ public class NLP {
         }
     }
     
-    public static Info processPhrase(SemanticGraph dependencies, IndexedWord root) {
-    	// not sure how this would happen, but it seems to be a problem
-    	if (root instanceof Info) {
-    		return null;
-    	}
-    	
+    public static Info processPhrase(SemanticGraph dependencies, IndexedWord root) {    	
     	// type of root
     	String type = root.tag();
         System.out.println("type: " + type);
@@ -187,28 +182,29 @@ public class NLP {
 
 
         // next step, need to identify further components of sentence
-        IndexedWord subject = null;
         String quantifier = null;
 //        Boolean goodToGo = false;
         Boolean TopLevelNegation = false;
         Boolean PredicateLevelNegation = false;
 
-        IndexedWord predicate = null;
+        IInfo subject = null;
+        IInfo predicate = null;
+        IInfo object = new InfoLiteral(root);
+        
         List<Pair<GrammaticalRelation, IndexedWord>> p = dependencies.childPairs(root);
         System.out.println("Identity of object: " + root.originalText().toLowerCase());
-        IndexedWord object = root;
         System.out.println("Type of object: " + p.get(0).second.originalText().toLowerCase());
 
         for (Pair<GrammaticalRelation, IndexedWord> item : p) {
             if (item.first.toString().equals("cop")) {
                 System.out.println("Predicate: " + item.second.originalText());
-                predicate = item.second;
+                predicate = new InfoLiteral(item.second);
             }
             
             // noun subject
             if (item.first.toString().startsWith("nsubj")) {
-                subject = item.second;
-                System.out.println("Subject: " + subject.originalText());
+                subject = new InfoLiteral(item.second);
+                System.out.println("Subject: " + item.second.originalText());
             }
             
             // clausal subject
@@ -248,10 +244,10 @@ public class NLP {
 //        System.out.println("Type of object: " + dobj.second.originalText().toLowerCase());
 //        System.out.println("Identity of object: " + newS.get(0).second.originalText().toLowerCase());
 
-        IndexedWord object = null;
-        IndexedWord subject = null;
-
-        IndexedWord predicate = root;
+        IInfo object = null;
+        IInfo subject = null;
+        IInfo predicate = new InfoLiteral(root);
+        
         String quantifier = null;
         Boolean TopLevelNegation = false;
         Boolean PredicateLevelNegation = false;
@@ -259,7 +255,7 @@ public class NLP {
         for (Pair<GrammaticalRelation, IndexedWord> item : s) {
         	// noun subject
             if (item.first.toString().startsWith("nsubj")) {
-                subject = item.second;
+                subject = new InfoLiteral(item.second);
             }
             
             // clausal subject
@@ -273,13 +269,13 @@ public class NLP {
             
             // noun object
             if (item.first.toString().equals("dobj") || item.first.toString().equals("iobj")) {
-                object = item.second;
+                object = new InfoLiteral(item.second);
             }
             
             // adjective object
             if (object == null &&(item.first.toString().equals("acomp") || 
             		item.first.toString().equals("xcomp"))) {
-            	object = item.second;
+            	object = new InfoLiteral(item.second);
             }
             
             // clausal object
@@ -289,7 +285,7 @@ public class NLP {
             
             // modifier as object
             if (object == null && item.first.toString().startsWith("nmod")) {
-            	object = item.second;
+            	object = new InfoLiteral(item.second);
             }
         }
 

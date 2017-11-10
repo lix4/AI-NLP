@@ -22,25 +22,22 @@ public class Search {
 	}
 	
 	public static boolean evalStatement(Info statement, Set<Info> processedText) {
-		String subj = WordProcessor.stemPhrase(statement.getSubject().originalText());
-		String obj = WordProcessor.stemPhrase(statement.getObject().originalText());
-		String pred = WordProcessor.stemPhrase(statement.getPredicate().originalText());
-        
         // perform the search
         for (Info info : processedText) {
-        	if (WordProcessor.stemPhrase(info.getSubject().originalText()).equalsIgnoreCase(subj) && 
-        			WordProcessor.stemPhrase(info.getObject().originalText()).equalsIgnoreCase(obj) &&
-        			WordProcessor.stemPhrase(info.getPredicate().originalText()).equalsIgnoreCase(pred)) {
+        	if (statement.equals(info)) {
         		return true;
         	}
         }
-		
 		return false;
 	}
 	
 	public static Info processStatement(String statement) {
+		return processStatement(statement, pipeline);
+	}
+	
+	public static Info processStatement(String statement, StanfordCoreNLP coreNLP) {
 		Annotation ann = new Annotation(statement);
-		pipeline.annotate(ann);
+		coreNLP.annotate(ann);
 		
 		// run statement extractor
 		List<CoreMap> sentences = ann.get(SentencesAnnotation.class);
