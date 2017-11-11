@@ -38,7 +38,7 @@ current sentence: Schwartz argues that Lincoln's reputation grew slowly in the l
 
 --------------------------
 current sentence: The caption reads : Take it quietly Uncle Abe and I will draw it closer than ever.
-{Subject: caption, Predicate:  draw read, Object:  it {Subject: null, Predicate: Take, Object: Abe}}
+{Subject: caption, Predicates:  draw read, Objects:  it {Subject: null, Predicate: Take, Object: Abe}}
 
 --------------------------
 current sentence: Seward's initial reaction to the Trent affair, however, was too bellicose, so Lincoln also turned to Senator Charles Sumner, the chairman of the Senate Foreign Relations Committee and an expert in British diplomacy.
@@ -95,7 +95,7 @@ current sentence: In 1844, the couple bought a house in Springfield near Lincoln
 
 --------------------------
 current sentence: Lincoln and the Republican Party mobilized support for the draft throughout the North, and replaced the Union losses.
-{Subject: Parti, Predicate:  replac mobilize, Object:  loss support}
+{Subject: Parti, Predicates:  replac mobilize, Objects:  loss support}
 
 --------------------------
 current sentence: In 1860, Lincoln secured the Republican Party presidential nomination as a moderate from a swing state.
@@ -103,7 +103,7 @@ current sentence: In 1860, Lincoln secured the Republican Party presidential nom
 
 --------------------------
 current sentence: On April 12, 1861, Confederate forces fired on Union troops at Fort Sumter, forcing them to surrender, and began the war.
-{Subject: force, Predicate:  began fire, Object:  war April}
+{Subject: force, Predicates:  began fire, Objects:  war April}
 
 --------------------------
 current sentence: Lincoln believed that Fremont's emancipation was political; neither militarily necessary nor legal.
@@ -179,7 +179,7 @@ current sentence: I hate it because of the monstrous injustice of slavery itself
 
 --------------------------
 current sentence: John Merryman, a Maryland official involved in hindering the U.S. troop movements, petitioned Supreme Court Chief Justice and Marylander, Roger B. Taney, author of the controversial pro-slavery Dred Scott opinion, to issue a writ of habeas corpus, and in June Taney, acting as a circuit judge and not speaking for the Supreme Court, issued the writ, because in his opinion only Congress could suspend the writ.
-{Subject: Merryman, Predicate:  issu petition, Object:  writ Tanei}
+{Subject: Merryman, Predicates:  issu petition, Objects:  writ Tanei}
 
 --------------------------
 current sentence: In 1862, Congress created, with Lincoln's approval, the Department of Agriculture.
@@ -243,7 +243,7 @@ current sentence: He was private about his beliefs and respected the beliefs of 
 
 --------------------------
 current sentence: A Chicago Tribune writer produced a pamphlet that detailed Lincoln's life, and sold 100,000 to 200,000 copies.
-{Subject: writer, Predicate:  sold produc, Object:  copi pamphlet}
+{Subject: writer, Predicates:  sold produc, Objects:  copi pamphlet}
 
 --------------------------
 current sentence: The rotunda was still under construction.
@@ -279,7 +279,7 @@ current sentence: In 1816 the family moved north across the Ohio River to Indian
 
 --------------------------
 current sentence: Lincoln's declared philosophy on court nominations was that "we cannot ask a man what he will do, and if we should, and he should answer us, we should despise him for it.
-{Subject: Lincoln, Predicate:  despise declar, Object:  him {Subject: philosophi, Predicate: wa, Object: {Subject: we, Predicate: ask, Object: man}}}
+{Subject: Lincoln, Predicates:  despise declar, Objects:  him {Subject: philosophi, Predicate: wa, Object: {Subject: we, Predicate: ask, Object: man}}}
 
 --------------------------
 current sentence: He is a descendant of Samuel Lincoln, who migrated from Norfolk, England to Hingham, Massachusetts, in 1638.
@@ -287,7 +287,7 @@ current sentence: He is a descendant of Samuel Lincoln, who migrated from Norfol
 
 --------------------------
 current sentence: Delegates from 11 slave states walked out of the Democratic convention, disagreeing with Douglas' position on popular sovereignty, and ultimately selected John C. Breckinridge as their candidate.
-{Subject: Delegate, Predicate:  select walk, Object:  Breckinridge state}
+{Subject: Delegate, Predicates:  select walk, Objects:  Breckinridge state}
 
 --------------------------
 current sentence: Then it will be my duty to so co-operate with the President elect, as to save the Union between the election and the inauguration; as he will have secured his election on such ground that he cannot possibly save it afterward.
@@ -303,7 +303,7 @@ current sentence: Lincoln; 2.
 
 --------------------------
 current sentence: They met in Springfield, Illinois, in December 1839 and were engaged the following December.
-{Subject: Thei, Predicate:  engag met, Object:  the Illinoi}
+{Subject: Thei, Predicates:  engag met, Objects:  the Illinoi}
 
 --------------------------
 current sentence: In 1846, Lincoln was elected to the U.S. House of Representatives, where he served one two-year term.
@@ -336,14 +336,14 @@ current sentence: Grant waged his bloody Overland Campaign in 1864.
 --------------------------
 current sentence: On August 16, 1837, Lincoln wrote Mary a letter suggesting he would not blame her if she ended the relationship.
 {Subject: Lincoln, Predicate: wrote, Object: letter}
-
+e, Predicates:  modernize abolish strengthen preserv, Objects:  economi slaveri government Union}
 --------------------------
 current sentence: In doing so, he preserved the Union, abolished slavery, strengthened the federal government, and modernized the economy.
-{Subject: he, Predicate:  modernize abolish strengthen preserv, Object:  economi slaveri government Union}
+{Subject: h
 
 --------------------------
 current sentence: On April 1, 1865, Grant successfully outflanked Lee's forces in the Battle of Five Forks and nearly encircled Petersburg, and the Confederate government evacuated Richmond.
-{Subject: Grant, Predicate:  encircl evacuate outflank, Object:  Petersburg Richmond force}
+{Subject: Grant, Predicates:  encircl evacuate outflank, Objects:  Petersburg Richmond force}
 
 --------------------------
 current sentence: When Grant's 1864 spring campaigns turned into bloody stalemates and Union casualties mounted, the lack of military success wore heavily on the President's re-election prospects, and many Republicans across the country feared that Lincoln would be defeated.
@@ -435,7 +435,7 @@ current sentence: Lincoln successfully argued that the railroad company was not 
 
 --------------------------
 current sentence: Lincoln warned that "The Slave Power" was threatening the values of republicanism, and accused Douglas of distorting the values of the Founding Fathers that all men are created equal, while Douglas emphasized his Freeport Doctrine, that local settlers were free to choose whether to allow slavery or not, and accused Lincoln of having joined the abolitionists.
-{Subject: Lincoln, Predicate:  accus accus warn, Object:  Dougla Lincoln {Subject: Power, Predicate: threaten, Object: value}}
+{Subject: Lincoln, Predicates:  accus accus warn, Objects:  Dougla Lincoln {Subject: Power, Predicate: threaten, Object: value}}
 
 --------------------------
 current sentence: Conversely, the Radical Republicans criticized him for moving too slowly in abolishing slavery.
@@ -455,7 +455,7 @@ current sentence: Indeed, President Obama, has insisted on using Lincoln's Bible
 
 --------------------------
 current sentence: Republican editor Horace Greeley of the highly influential New York Tribune fell for the ploy, and Lincoln refuted it directly in a shrewd letter of August 22, 1862.
-{Subject: Greelei, Predicate:  refut fell, Object:  it ploi}
+{Subject: Greelei, Predicates:  refut fell, Objects:  it ploi}
 
 --------------------------
 current sentence: States admitted to the Union West Virginia, admitted to the Union June 20, 1863, contained the former north-westernmost counties of Virginia that seceded from Virginia after that commonwealth declared its secession from the Union.
@@ -487,7 +487,7 @@ current sentence: They settled on a site in Macon County, Illinois, 10 miles wes
 
 --------------------------
 current sentence: However he did believe in an all-powerful God that shaped events and, by 1865, was expressing those beliefs in major speeches.
-{Subject: he, Predicate:  express believe, Object:  belief God}
+{Subject: he, Predicates:  express believe, Objects:  belief God}
 
 --------------------------
 current sentence: By December 1863, a proposed constitutional amendment that would outlaw slavery was brought to Congress for passage.
@@ -715,7 +715,7 @@ current sentence: The campaign's objective was to capture Richmond by moving the
 
 --------------------------
 current sentence: He ignored Lincoln's order to divide his troops, and possibly force Lee to do the same in Harper's Ferry, and tendered his resignation, which Lincoln accepted.
-{Subject: He, Predicate:  tender ignor, Object:  resignate order}
+{Subject: He, Predicates:  tender ignor, Objects:  resignate order}
 
 --------------------------
 current sentence: Abraham became very close to his stepmother, whom he referred to as "Mother".
@@ -771,11 +771,1928 @@ current sentence: He had long made clear his opposition to the confiscation and 
 
 --------------------------
 current sentence: An electoral landslide for Lincoln in the 1864 election, southern states and territories not in play Lincoln's second inaugural address in 1865 at the almost completed Capitol building While the Democratic platform followed the "Peace wing" of the party and called the war a "failure", their candidate, General George B. McClellan, supported the war and repudiated the platform.
-{Subject: failure, Predicate:  repudiate support, Object:  platform war}
+{Subject: failure, Predicates:  repudiate support, Objects:  platform war}
 
 --------------------------
 current sentence: Historians have emphasized the widespread shock and sorrow, but also noted that some Lincoln haters cheered when they heard the news.
 {Subject: Historian, Predicate: emphasize, Object: sorrow}
 
 --------------------------
-curre
+current sentence: At the same time, after initial setbacks, Grant laid siege to Vicksburg and the Union navy attained some success in Charleston harbor.
+{Subject: Grant, Predicate: laid, Object: siege}
+
+--------------------------
+current sentence: They had lost 'their Moses'.
+{Subject: Thei, Predicate: lost, Object: Mose}
+
+--------------------------
+current sentence: In 1840, Lincoln became engaged to Mary Todd, who was from a wealthy slave-holding family in Lexington, Kentucky.
+{Subject: Lincoln, Predicate: became, Object: 1840}
+
+--------------------------
+current sentence: Photo taken by one of Lincoln's law students around 1846.
+{Subject: Photo, Predicate: taken, Object: one}
+
+--------------------------
+current sentence: At the beginning of the war, he also sought to persuade the states to accept compensated emancipation in return for their prohibition of slavery.
+{Subject: he, Predicate: sought, Object: begin}
+
+--------------------------
+current sentence: His sole objective was an agreement to end the fighting and the meetings produced no results.
+{Subject: objective, Predicate: wa, Object: agreement}
+
+--------------------------
+current sentence: As he walked through the city, white Southerners were stone-faced, but freedmen greeted him as a hero.
+{Subject: Southerner, Predicate: were, Object: stone-fac}
+
+--------------------------
+current sentence: Lincoln spent many hours a week talking to politicians from across the land and using his patronage powers�greatly expanded over peacetime�to hold the factions of his party together, build support for his own policies, and fend off efforts by Radicals to drop him from the 1864 ticket.
+{Subject: Lincoln, Predicate: spent, Object: hour}
+
+--------------------------
+current sentence: His position gained strength because he highlighted the moral basis of republicanism, rather than its legalisms.
+{Subject: position, Predicate: gain, Object: strength}
+
+--------------------------
+current sentence: As a young man, Lincoln was a religious skeptic, or, in the words of a biographer, an iconoclast.
+{Subject: Lincoln, Predicate: wa, Object: skeptic}
+
+--------------------------
+current sentence: The war also expanded with naval operations in 1862 when the CSS Virginia, formerly the USS Merrimack, damaged or destroyed three Union vessels in Norfolk, Virginia, before being engaged and damaged by the USS Monitor.
+{Subject: war, Predicate: expand, Object: operate}
+
+--------------------------
+current sentence: On the third ballot Pennsylvania put him over the top.
+{Subject: Pennsylvania, Predicate: put, Object: him}
+
+--------------------------
+current sentence: Enlisting former slaves in the military was official government policy after the issuance of the Emancipation Proclamation.
+{Subject: {Subject: null, Predicate: Enlist, Object: slave}, Predicate: wa, Object: polici}
+
+--------------------------
+current sentence: And having begun He could give the final victory to either side any day.
+{Subject: {Subject: null, Predicate: begun, Object: He}, Predicate: give, Object: victori}
+
+--------------------------
+current sentence: It is entirely plausible to imagine Lincoln and Congress agreeing on a Reconstruction policy that encompassed federal protection for basic civil rights plus limited black suffrage, along the lines Lincoln proposed just before his death."
+{Subject: It, Predicate: i, Object: plausible}
+
+--------------------------
+current sentence: Of the 816.5 acres that Thomas held in Kentucky, he lost all but 200 acres of his land in court disputes over property titles.
+{Subject: he, Predicate: lost, Object: acre}
+
+--------------------------
+current sentence: I do not expect the Union to be dissolved�I do not expect the house to fall�but I do expect it will cease to be divided.
+{Subject: I, Predicate: expect, Object: Union}
+
+--------------------------
+current sentence: No ballots were cast for him in 10 of the 15 Southern slave states, and he won only two of 996 counties in all the Southern states.
+{Subject: ballot, Predicates:  won cast, Objects:  two him}
+
+--------------------------
+current sentence: He expanded his war powers, and imposed a blockade on all the Confederate shipping ports, disbursed funds before appropriation by Congress, and after suspending habeas corpus, arrested and imprisoned thousands of suspected Confederate sympathizers.
+{Subject: He, Predicates:  impos expand, Objects:  blockade power}
+
+--------------------------
+current sentence: Lincoln's bodyguard, John Parker, left Ford's Theater during intermission to drink at the saloon next door.
+{Subject: bodyguard, Predicate: left, Object: Theater}
+
+--------------------------
+current sentence: Although the economy was booming in the region, the business struggled and Lincoln eventually sold his share.
+{Subject: business, Predicates:  sold struggl, Objects:  share }
+
+--------------------------
+current sentence: Though he ran as a Whig, many Democrats favored him over a more powerful Whig opponent.
+{Subject: Democrat, Predicate: favor, Object: him}
+
+--------------------------
+current sentence: Generally, the top three presidents are rated as 1.
+{Subject: president, Predicate: rate, Object: 1}
+
+--------------------------
+current sentence: This strategy allowed Generals Sherman and Philip Sheridan to destroy plantations and towns in Virginia's Shenandoah Valley.
+{Subject: strategi, Predicate: allow, Object: Sheridan}
+
+--------------------------
+current sentence: Lincoln insisted on holding some of McClellan's troops in defense of the capital.
+{Subject: Lincoln, Predicate: insist, Object: null}
+
+--------------------------
+current sentence: In the Cold War years, Lincoln's image shifted to emphasize the symbol of freedom who brought hope to those oppressed by communist regimes.
+{Subject: image, Predicate: shift, Object: year}
+
+--------------------------
+current sentence: The party, including Lincoln, favored economic modernization in banking, protective tariffs to fund internal improvements including railroads, and espoused urbanization as well.
+{Subject: parti, Predicates:  espous favor, Objects:  urbanize modernize}
+
+--------------------------
+current sentence: In May 1859, Lincoln purchased the Illinois Staats-Anzeiger, a German-language newspaper which was consistently supportive.
+{Subject: Lincoln, Predicate: purchas, Object: Staats-Anzeiger}
+
+--------------------------
+current sentence: The Republicans did maintain their majorities in Congress and in the major states, except New York.
+{Subject: Republican, Predicate: maintain, Object: majoriti}
+
+--------------------------
+current sentence: He partnered with Stephen T. Logan from 1841 until 1844.
+{Subject: He, Predicate: partner, Object: Logan}
+
+--------------------------
+current sentence: Lincoln did not show the pledge to his cabinet, but asked them to sign the sealed envelope.
+{Subject: Lincoln, Predicate: show, Object: pledge}
+
+--------------------------
+current sentence: Two days after McClellan's return to command, General Robert E. Lee's forces crossed the Potomac River into Maryland, leading to the Battle of Antietam in September 1862.
+{Subject: force, Predicate: cross, Object: River}
+
+--------------------------
+current sentence: In the 1840s, Lincoln subscribed to the Doctrine of Necessity, a belief that asserted the human mind was controlled by some higher power.
+{Subject: Lincoln, Predicate: subscrib, Object: 1840}
+
+--------------------------
+current sentence: He obtained Congress's consent to reinstate for Grant the rank of Lieutenant General, which no officer had held since George Washington.
+{Subject: He, Predicate: obtain, Object: consent}
+
+--------------------------
+current sentence: On October 5, 1818, Nancy Lincoln died of milk sickness, leaving eleven-year-old Sarah in charge of a household that included her father, nine-year-old Abraham, and Dennis Hanks, Nancy's nineteen-year-old orphaned cousin.
+{Subject: Lincoln, Predicate: di, Object: October}
+
+--------------------------
+current sentence: Robert was the only child to live to adulthood and have children.
+{Subject: Robert, Predicate: wa, Object: child}
+
+--------------------------
+current sentence: George Washington; and 3.
+{Subject: null, Predicate: null, Object: Washington}
+
+--------------------------
+current sentence: He noted that Lincoln used ethnic slurs, told jokes that ridiculed blacks, insisted he opposed social equality, and proposed sending freed slaves to another country.
+{Subject: He, Predicate: note, Object: {Subject: Lincoln, Predicate: insist, Object: {Subject: he, Predicate: oppos, Object: equal}}}
+
+--------------------------
+current sentence: By March 1861, no leaders of the insurrection had proposed rejoining the Union on any terms.
+{Subject: leader, Predicate: propos, Object: March}
+
+--------------------------
+current sentence: He said "A majority held in restraint by constitutional checks and limitations, and always changing easily with deliberate changes of popular opinions and sentiments, is the only true sovereign of a free people."
+{Subject: He, Predicate: said, Object: null}
+
+--------------------------
+current sentence: An exceptionally astute politician deeply involved with power issues in each state, Lincoln reached out to the War Democrats and managed his own re-election campaign in the 1864 presidential election.
+{Subject: Lincoln, Predicates:  manag reach, Objects:  campaign Democrat}
+
+--------------------------
+current sentence: Lucy Hanks migrated to Kentucky with her daughter, Nancy.
+{Subject: Hank, Predicate: migrate, Object: Kentucki}
+
+--------------------------
+current sentence: Congress never enacted the resolution or even debated it, the national papers ignored it, and it resulted in a loss of political support for Lincoln in his district.
+{Subject: Congress, Predicate: enact, Object: resolution}
+
+--------------------------
+current sentence: Privately, Lincoln concluded at this point that the slave base of the Confederacy had to be eliminated.
+{Subject: Lincoln, Predicate: conclud, Object: {Subject: base, Predicate: had, Object: eliminate}}
+
+--------------------------
+current sentence: President Lincoln had planned to reform federal Indian policy.
+{Subject: Lincoln, Predicate: plan, Object: reform}
+
+--------------------------
+current sentence: In a larger sense, the outpouring of grief and anguish was in response to the deaths of so many men in the war that had just ended.
+{Subject: outpour, Predicate: wa, Object: response}
+
+--------------------------
+current sentence: His victory was entirely due to the strength of his support in the North and West.
+{Subject: victori, Predicate: wa, Object: due}
+
+--------------------------
+current sentence: For some time, Lincoln continued earlier plans to set up colonies for the newly freed slaves.
+{Subject: Lincoln, Predicate: continu, Object: plan}
+
+--------------------------
+current sentence: The Civil War was a significant force in the eventual dominance of the singular usage by the end of the 19th century.
+{Subject: War, Predicate: wa, Object: force}
+
+--------------------------
+current sentence: On the other hand, Donald opined in his 1996 biography that Lincoln was distinctly endowed with the personality trait of negative capability, defined by the poet John Keats and attributed to extraordinary leaders who were "content in the midst of uncertainties and doubts, and not compelled toward fact or reason".
+{Subject: Donald, Predicate: opin, Object: {Subject: Lincoln, Predicate: defin, Object: Keat}}
+
+--------------------------
+current sentence: Of his learning method, Lincoln stated: "I studied with nobody".
+{Subject: Lincoln, Predicate: state, Object: {Subject: I, Predicate: studi, Object: nobodi}}
+
+--------------------------
+current sentence: After being on the run for 12 days, Booth was tracked down and found on a farm in Virginia, some 70 miles south of Washington.
+{Subject: Booth, Predicate: track, Object: some}
+
+--------------------------
+current sentence: Passage of the proposed amendment became part of the Republican/Unionist platform in the election of 1864.
+{Subject: Passage, Predicate: became, Object: part}
+
+--------------------------
+current sentence: From 1853 to 1860, another of Lincoln's largest clients was the Illinois Central Railroad.
+{Subject: another, Predicate: wa, Object: Railroad}
+
+--------------------------
+current sentence: Franklin D. Roosevelt, although Lincoln and Washington, and Washington and Roosevelt, occasionally are reversed.
+{Subject: Roosevelt, Predicate: revers, Object: null}
+
+--------------------------
+current sentence: The war effort was the source of continued disparagement of Lincoln, and dominated his time and attention.
+{Subject: effort, Predicate: wa, Object: source}
+
+--------------------------
+current sentence: Sherman's capture of Atlanta in September and David Farragut's capture of Mobile ended defeatist jitters.
+{Subject: capture, Predicate: end, Object: jitter}
+
+--------------------------
+current sentence: Lincoln's reputation with clients gave rise to his nickname "Honest Abe."
+{Subject: reputate, Predicate: gave, Object: rise}
+
+--------------------------
+current sentence: The case is famous for Lincoln's use of a fact established by judicial notice in order to challenge the credibility of an eyewitness.
+{Subject: case, Predicate: i, Object: famou}
+
+--------------------------
+current sentence: The speech created an evocative image of the danger of disunion caused by the slavery debate, and rallied Republicans across the North.
+{Subject: speech, Predicates:  ralli create, Objects:  Republican image}
+
+--------------------------
+current sentence: Lincoln initially concentrated on the military and political dimensions of the war.
+{Subject: Lincoln, Predicate: concentrate, Object: dimension}
+
+--------------------------
+current sentence: In the 1850s, Lincoln believed in "providence" in a general way, and rarely used the language or imagery of the evangelicals.
+{Subject: Lincoln, Predicates:  us believ, Objects:  language imageri 1850}
+
+--------------------------
+current sentence: Stanton was a staunchly Unionist pro-business conservative Democrat who moved toward the Radical Republican faction.
+{Subject: Stanton, Predicate: wa, Object: pro-business}
+
+--------------------------
+current sentence: She never replied and the courtship ended.
+{Subject: She, Predicate: repli, Object: null}
+
+--------------------------
+current sentence: After refusing to surrender to Union troops, Booth was killed by Sergeant Boston Corbett on April 26.
+{Subject: Booth, Predicate: kill, Object: Corbett}
+
+--------------------------
+current sentence: Historian Barry Schwartz wrote in 2009 that Lincoln's image suffered "erosion, fading prestige, benign ridicule" in the late 20th century.
+{Subject: Schwartz, Predicate: wrote, Object: {Subject: image, Predicate: suffer, Object: erosion}}
+
+--------------------------
+current sentence: Lincoln refused to allow any negotiation with the Confederacy as a coequal.
+{Subject: Lincoln, Predicate: refus, Object: allow}
+
+--------------------------
+current sentence: The goal was to demonstrate the superior power of "free labor", whereby a common farm boy could work his way to the top by his own efforts.
+{Subject: goal, Predicate: wa, Object: demonstrate}
+
+--------------------------
+current sentence: Finally, Lincoln's Treasury Secretary, Salmon P. Chase, was nominated as Chief Justice, and appointed the same day, on December 6, 1864.
+{Subject: Secretari, Predicate: nominate, Object: Justice}
+
+--------------------------
+current sentence: Both of these replacements were political moderates and prospectively more supportive of the Commander-in-Chief.
+{Subject: Both, Predicate: were, Object: moderate}
+
+--------------------------
+current sentence: His Gettysburg Address became an iconic endorsement of the principles of nationalism, republicanism, equal rights, liberty, and democracy.
+{Subject: Address, Predicate: became, Object: endorsement}
+
+--------------------------
+current sentence: From the early 1830s, Lincoln was a steadfast Whig and professed to friends in 1861 to be, "an old line Whig, a disciple of Henry Clay".
+{Subject: Lincoln, Predicate: wa, Object: Whig}
+
+--------------------------
+current sentence: The last such proclamation had been during James Madison's presidency 50 years before.
+{Subject: proclamate, Predicate: been, Object: presidence}
+
+--------------------------
+current sentence: Lincoln has been consistently ranked both by scholars and the public as one of the three greatest U.S. presidents.
+{Subject: Lincoln, Predicate: rank, Object: scholar}
+
+--------------------------
+current sentence: In March 1857, the Supreme Court issued its decision in Dred Scott v. Sandford.
+{Subject: Court, Predicate: issu, Object: decision}
+
+--------------------------
+current sentence: Pope complied with Lincoln's strategic desire to move toward Richmond from the north, thus protecting the capital from attack.
+{Subject: Pope, Predicate: compli, Object: protect}
+
+--------------------------
+current sentence: In the early 1830s, he met Mary Owens from Kentucky when she was visiting her sister.
+{Subject: he, Predicate: met, Object: Owen}
+
+--------------------------
+current sentence: A former Democrat, Hannibal Hamlin of Maine, was nominated for Vice President to balance the ticket.
+{Subject: Democrat, Predicate: nominate, Object: balance}
+
+--------------------------
+current sentence: There was also the Great Moments with Mr. Lincoln exhibit in Disneyland, and the Hall of Presidents at Walt Disney World, which had to do with Walt Disney admiring Lincoln ever since he was a little boy.
+{Subject: Moment, Predicate: wa, Object: null}
+
+--------------------------
+current sentence: On the day Lincoln was assassinated, he reportedly told his wife he desired to visit the Holy Land.
+{Subject: he, Predicate: told, Object: {Subject: he, Predicate: desir, Object: visit}}
+
+--------------------------
+current sentence: His likeness also appears on many postage stamps and he has been memorialized in many town, city, and county names, including the capital of Nebraska.
+{Subject: likeness, Predicate: appear, Object: stamp}
+
+--------------------------
+current sentence: A few weeks before the war, Lincoln sent a letter to every governor informing them Congress had passed a joint resolution to amend the Constitution.
+{Subject: Lincoln, Predicate: sent, Object: letter}
+
+--------------------------
+current sentence: He was known for his "free soil" stance of opposing both slavery and abolitionism.
+{Subject: He, Predicate: known, Object: stance}
+
+--------------------------
+current sentence: The Crittenden Compromise would have extended the Missouri Compromise line of 1820, dividing the territories into slave and free, contrary to the Republican Party's free-soil platform.
+{Subject: Compromise, Predicate: extend, Object: line}
+
+--------------------------
+current sentence: He abandoned the bill when it failed to garner sufficient Whig supporters.
+{Subject: He, Predicate: abandon, Object: bill}
+
+--------------------------
+current sentence: On October 16, 1854, in his "Peoria Speech", Lincoln declared his opposition to slavery, which he repeated en route to the presidency.
+{Subject: Lincoln, Predicate: declar, Object: opposition}
+
+--------------------------
+current sentence: Tall for his age, Lincoln was also strong and athletic.
+{Subject: Tall, Predicate: wa, Object: strong}
+
+--------------------------
+current sentence: Other judicial appointments This section does not cite any references or sources.
+{Subject: appointment, Predicate: cite, Object: source}
+
+--------------------------
+current sentence: Relevant discussion may be found on the talk page.
+{Subject: discussion, Predicate: found, Object: page}
+
+--------------------------
+current sentence: Mary Todd Lincoln kept house, often with the help of a relative or hired servant girl.
+{Subject: Lincoln, Predicate: kept, Object: house}
+
+--------------------------
+current sentence: Lincoln directed his inaugural address to the South, proclaiming once again that he had no intention, or inclination, to abolish slavery in the Southern states:
+Apprehension seems to exist among the people of the Southern States that by the accession of a Republican Administration their property and their peace and personal security are to be endangered.
+{Subject: Lincoln, Predicate: direct, Object: address}
+
+--------------------------
+current sentence: This distant territory was a Democratic stronghold, and acceptance of the post would have effectively ended his legal and political career in Illinois, so he declined and resumed his law practice.
+{Subject: territori, Predicate: wa, Object: stronghold}
+
+--------------------------
+current sentence: Pennsylvania iron interests were reassured by his support for protective tariffs.
+{Subject: interest, Predicate: reassur, Object: support}
+
+--------------------------
+current sentence: The Democratic Party was deeply split, with some leaders and most soldiers openly for Lincoln.
+{Subject: Parti, Predicate: wa, Object: split}
+
+--------------------------
+current sentence: Senior Senator Stephen A. Douglas of Illinois had incorporated popular sovereignty into the Act.
+{Subject: Dougla, Predicate: incorporate, Object: sovereignti}
+
+--------------------------
+current sentence: For his final journey with his son Willie, both caskets were transported in the executive coach "United States" and for three weeks the Lincoln Special funeral train decorated in black bunting bore Lincoln's remains on a slow circuitous waypoint journey from Washington D.C. to Springfield, Illinois, stopping at many cities across the North for large-scale memorials attended by hundreds of thousands, as well as many people who gathered in informal trackside tributes with bands, bonfires, and hymn singing or silent reverence with hat in hand as the railway procession slowly passed by.
+{Subject: casket, Predicate: transport, Object: journei}
+
+--------------------------
+current sentence: Early career and militia service Further information: Early life and career of Abraham Lincoln and Abraham Lincoln in the Black Hawk War Lincoln depicted protecting a Native American from his own men in a scene often related about Lincoln's service during the Black Hawk War.
+{Subject: life, Predicate: depict, Object: protect}
+
+--------------------------
+current sentence: Marriage and children Further information: Lincoln family tree, Medical and mental health of Abraham Lincoln, and Sexuality of Abraham Lincoln 1864 photo of President Lincoln with youngest son, Tad Mary Todd Lincoln, wife of Abraham Lincoln, age 28 Lincoln's first romantic interest was Ann Rutledge, whom he met when he first moved to New Salem.
+{Subject: tree, Predicate: wa, Object: Rutledge}
+
+--------------------------
+current sentence: Abraham became adept at using an axe.
+{Subject: Abraham, Predicate: became, Object: adept}
+
+--------------------------
+current sentence: Instead, he monitored the campaign closely and relied on the enthusiasm of the Republican Party.
+{Subject: he, Predicate: monitor, Object: campaign}
+
+--------------------------
+current sentence: Six of these states then adopted a constitution and declared themselves to be a sovereign nation, the Confederate States of America.
+{Subject: Six, Predicates:  declar adopt, Objects:  themselve constitution}
+
+--------------------------
+current sentence: However, lacking requested reinforcements from McClellan, now commanding the Army of the Potomac, Pope was soundly defeated at the Second Battle of Bull Run in the summer of 1862, forcing the Army of the Potomac to defend Washington for a second time.
+{Subject: Pope, Predicate: defeate, Object: forc}
+
+--------------------------
+current sentence: Meanwhile, Douglas was selected as the candidate of the Northern Democrats.
+{Subject: Dougla, Predicate: select, Object: candidate}
+
+--------------------------
+current sentence: As the war drew to a close, Lincoln's presidential Reconstruction for the South was in flux; having believed the federal government had limited responsibility to the millions of freedmen.
+{Subject: Reconstruction, Predicate: wa, Object: flux}
+
+--------------------------
+current sentence: Determined to find a course that would reunite the nation and not alienate the South, Lincoln urged that speedy elections under generous terms be held throughout the war.
+{Subject: Lincoln, Predicate: urg, Object: {Subject: election, Predicate: held, Object: war}}
+
+--------------------------
+current sentence: Historian Donald described the speech as a "superb political move for an unannounced candidate, to appear in one rival's own state at an event sponsored by the second rival's loyalists, while not mentioning either by name during its delivery".
+{Subject: Donald, Predicate: describ, Object: speech}
+
+--------------------------
+current sentence: In addition, Lincoln had to contend with reinforcing strong Union sympathies in the border slave states and keeping the war from becoming an international conflict.
+{Subject: Lincoln, Predicate: had, Object: addition}
+
+--------------------------
+current sentence: He also knew well the importance of Vicksburg and understood the necessity of defeating the enemy's army, rather than simply capturing territory.
+{Subject: He, Predicates:  understood knew, Objects:  necessiti importance}
+
+--------------------------
+current sentence: Lincoln then made an extended visit to Grant's headquarters at City Point, Virginia.
+{Subject: Lincoln, Predicate: made, Object: visit}
+
+--------------------------
+current sentence: In it, he deemed the high casualties on both sides to be God's will.
+{Subject: he, Predicate: deem, Object: casualti}
+
+--------------------------
+current sentence: The upper South and border states listened to, but initially rejected, the secessionist appeal.
+{Subject: state, Predicate: listen, Object: to}
+
+--------------------------
+current sentence: The death of his son Willie in February 1862 may have caused Lincoln to look toward religion for answers and solace.
+{Subject: death, Predicate: caus, Object: Lincoln}
+
+--------------------------
+current sentence: On April 14, 1865, five days after the April 9th surrender of Confederate commanding general Robert E. Lee, Lincoln was assassinated by John Wilkes Booth, a Confederate sympathizer.
+{Subject: Lincoln, Predicate: assassinate, Object: April}
+
+--------------------------
+current sentence: With malice toward none; with charity for all; with firmness in the right, as God gives us to see the right, let us strive on to finish the work we are in; to bind up the nation's wounds; to care for him who shall have borne the battle, and for his widow, and his orphan�to do all which may achieve and cherish a just and lasting peace, among ourselves, and with all nations.
+{Subject: null, Predicate: let, Object: {Subject: u, Predicate: strive, Object: null}}
+
+--------------------------
+current sentence: Secretary of War Stanton saluted and said, "Now he belongs to the ages."
+{Subject: Secretari, Predicate: salut, Object: null}
+
+--------------------------
+current sentence: As a result, Lincoln replaced Buell with William Rosecrans; and, after the 1862 midterm elections, he replaced McClellan with Republican Ambrose Burnside.
+{Subject: Lincoln, Predicates:  replac replac, Objects:  McClellan Buell}
+
+--------------------------
+current sentence: Most Republicans agreed with Lincoln that the North was the aggrieved party, as the Slave Power tightened its grasp on the national government with the Dred Scott decision and the presidency of James Buchanan.
+{Subject: Republican, Predicate: agree, Object: {Subject: North, Predicate: wa, Object: parti}}
+
+--------------------------
+current sentence: After his father's murder, Thomas was left to make his own way on the frontier, working at odd jobs in Kentucky and in Tennessee, before settling with members of his family in Hardin County, Kentucky, in the early 1800s.
+{Subject: Thoma, Predicate: left, Object: murder}
+
+--------------------------
+current sentence: Those who knew Lincoln as a teenager later recalled him being very distraught over his sister Sarah's death on January 20, 1828, while giving birth to a stillborn son.
+{Subject: Those, Predicate: recall, Object: death}
+
+--------------------------
+current sentence: He was an affectionate, though often absent, husband and father of four children.
+{Subject: He, Predicate: wa, Object: husband}
+
+--------------------------
+current sentence: His victory prompted seven southern slave states to form the Confederate States of America before he moved into the White House - no compromise or reconciliation was found regarding slavery and secession.
+{Subject: victori, Predicate: prompt, Object: state}
+
+--------------------------
+current sentence: In 1811 the family relocated eight miles north, to Knob Creek Farm, where Thomas acquired title to 230 acres of land.
+{Subject: Thoma, Predicate: acquir, Object: title}
+
+--------------------------
+current sentence: He was the first president from the Republican Party.
+{Subject: He, Predicate: wa, Object: president}
+
+--------------------------
+current sentence: Politically, Lincoln fought back by pitting his opponents against each other, by carefully planned political patronage, and by appealing to the American people with his powers of oratory.
+{Subject: Lincoln, Predicate: fought, Object: patronage}
+
+--------------------------
+current sentence: Exploiting the embellished legend of his frontier days with his father , Lincoln's supporters adopted the label of "The Rail Candidate".
+{Subject: supporter, Predicate: adopt, Object: label}
+
+--------------------------
+current sentence: Copperheads criticized Lincoln for refusing to compromise on the slavery issue.
+{Subject: Copperhead, Predicate: criticize, Object: Lincoln}
+
+--------------------------
+current sentence: He suspended habeas corpus, leading to the controversial ex parte Merryman decision, and he averted potential British intervention in the war by defusing the Trent Affair in late 1861.
+{Subject: He, Predicates:  avert suspend, Objects:  intervention corpu}
+
+--------------------------
+current sentence: He suggested that postmodernism and multiculturalism have diluted greatness as a concept.
+{Subject: He, Predicate: suggest, Object: {Subject: multicultural, Predicate: dilut, Object: greatness}}
+
+--------------------------
+current sentence: Despite some financial challenges he eventually obtained clear title to 80 acres of land in what became known as the Little Pigeon Creek Community in Spencer County.
+{Subject: he, Predicate: obtain, Object: title}
+
+--------------------------
+current sentence: There were thousands of Republican speakers who focused first on the party platform, and second on Lincoln's life story, emphasizing his childhood poverty.
+{Subject: thousand, Predicate: were, Object: null}
+
+--------------------------
+current sentence: On May 18, at the Republican National Convention in Chicago, Lincoln's friends promised and manipulated and won the nomination on the third ballot, beating candidates such as William H. Seward and Salmon P. Chase.
+{Subject: friend, Predicates:  manipulate won promis, Objects:  nominate Mai}
+
+--------------------------
+current sentence: He declared that any citizen found bearing arms could be court-martialed and shot, and that slaves of persons aiding the rebellion would be freed.
+{Subject: He, Predicate: declar, Object: {Subject: slave, Predicate: freed, Object: null}}
+
+--------------------------
+current sentence: Today's U.S. President, however, seems to be promoting a sympathetic resurgence for his predecessor, Lincoln.
+{Subject: President, Predicate: seem, Object: promot}
+
+--------------------------
+current sentence: Taylor won and Lincoln hoped to be appointed Commissioner of the General Land Office, but that lucrative patronage job went to an Illinois rival, Justin Butterfield, considered by the administration to be a highly skilled lawyer, but in Lincoln's view, an "old fossil".
+{Subject: Taylor, Predicate: won, Object: null}
+
+--------------------------
+current sentence: As Grant continued to wear down Lee's forces, efforts to discuss peace began.
+{Subject: effort, Predicate: began, Object: null}
+
+--------------------------
+current sentence: He advocated navigational improvements on the Sangamon River.
+{Subject: He, Predicate: advocate, Object: improvement}
+
+--------------------------
+current sentence: On November 8, Lincoln was re-elected in a landslide, carrying all but three states, and receiving 78 percent of the Union soldiers' vote.
+{Subject: Lincoln, Predicate: re-elect, Object: {Subject: null, Predicates:  receiv carri, Objects:  percent state}}
+
+--------------------------
+current sentence: Also in 1861, Lincoln signed the Revenue Act of 1861, creating the first U.S. income tax.
+{Subject: Lincoln, Predicate: sign, Object: Act}
+
+--------------------------
+current sentence: Lincoln declared that such an amendment would "clinch the whole matter".
+{Subject: Lincoln, Predicate: declar, Object: {Subject: amendment, Predicate: clinch, Object: matter}}
+
+--------------------------
+current sentence: Once the abolition of slavery in the rebel states became a military objective, as Union armies advanced south, more slaves were liberated until all three million of them in Confederate territory were freed.
+{Subject: slave, Predicate: liberate, Object: null}
+
+--------------------------
+current sentence: In March 1861, in Lincoln's first inaugural address, he explored the nature of democracy.
+{Subject: he, Predicate: explor, Object: nature}
+
+--------------------------
+current sentence: His formal schooling from several itinerant teachers was intermittent, the aggregate of which may have amounted to less than a year.
+{Subject: school, Predicate: wa, Object: intermittent}
+
+--------------------------
+current sentence: Lincoln brought in Joseph Hooker, despite his record of loose talk about the need for a military dictatorship.
+{Subject: Lincoln, Predicate: brought, Object: Hooker}
+
+--------------------------
+current sentence: The dying President was taken across the street to Petersen House.
+{Subject: President, Predicate: taken, Object: street}
+
+--------------------------
+current sentence: Secession sentiment was strong in Missouri and Maryland, but did not prevail.
+{Subject: sentiment, Predicate: wa, Object: strong}
+
+--------------------------
+current sentence: In terms of war strategy, Lincoln articulated two priorities: to ensure that Washington was well-defended, and to conduct an aggressive war effort that would satisfy the demand in the North for prompt, decisive victory.
+{Subject: Lincoln, Predicate: articulate, Object: prioriti}
+
+--------------------------
+current sentence: The farm is preserved as part of the Lincoln Boyhood National Memorial.
+{Subject: farm, Predicate: preserv, Object: part}
+
+--------------------------
+current sentence: Lincoln's appointments were designed to keep both the moderate and Radical factions in harness.
+{Subject: appointment, Predicate: design, Object: keep}
+
+--------------------------
+current sentence: The Lincoln Cabinet Office Name Term President Abraham Lincoln 1861-1865 Vice President Hannibal Hamlin 1861-1865 Andrew Johnson 1865 Secretary of State William H. Seward 1861-1865 Secretary of Treasury Salmon P. Chase 1861-1864 William P. Fessenden 1864-1865 Hugh McCulloch 1865 Secretary of War Simon Cameron 1861-1862 Edwin M. Stanton 1862-1865 Attorney General Edward Bates 1861-1864 James Speed 1864-1865 Postmaster General Montgomery Blair 1861-1864 William Dennison Jr. 1864-1865 Secretary of the Navy Gideon Welles 1861-1865 Secretary of the Interior Caleb Blood Smith 1861-1862 John Palmer Usher 1863-1865 Other important legislation involved two measures to raise revenues for the Federal government: tariffs , and a new Federal income tax.
+{Subject: Office, Predicate: Name, Object: tariff}
+
+--------------------------
+current sentence: After attending an April 11, 1865, speech in which Lincoln promoted voting rights for blacks, an incensed Booth changed his plans and became determined to assassinate the president.
+{Subject: Booth, Predicate: chang, Object: plan}
+
+--------------------------
+current sentence: In the spring of 1863, Lincoln was optimistic about upcoming military campaigns to the point of thinking the end of the war could be near if a string of victories could be put together.
+{Subject: Lincoln, Predicate: wa, Object: optimistic}
+
+--------------------------
+current sentence: He returned to politics to oppose the pro-slavery Kansas-Nebraska Act.
+{Subject: He, Predicate: return, Object: politic}
+
+--------------------------
+current sentence: Lincoln was open to the possibility of a constitutional convention to make further amendments to the Constitution.
+{Subject: Lincoln, Predicate: wa, Object: open}
+
+--------------------------
+current sentence: With very little support in the slaveholding states of the South, he swept the North and was elected president in 1860.
+{Subject: he, Predicates:  elect swept, Objects:  president North}
+
+--------------------------
+current sentence: The war had begun with a Mexican slaughter of American soldiers in territory disputed by Mexico and the U.S. Polk insisted that Mexican soldiers had "invaded our territory and shed the blood of our fellow-citizens on our own soil".
+{Subject: war, Predicate: begun, Object: slaughter}
+
+--------------------------
+current sentence: By 1835, they were in a relationship but not formally engaged.
+{Subject: thei, Predicate: were, Object: relationship}
+
+--------------------------
+current sentence: Mark E. Neely Jr. has argued that there was no effort to engage in "total war" against civilians which he believed did take place during World War II.
+{Subject: Jr., Predicate: argu, Object: {Subject: effort, Predicate: wa, Object: null}}
+
+--------------------------
+current sentence: Lincoln's father-in-law and others of the Todd family were either slave owners or slave traders.
+{Subject: other, Predicate: were, Object: owner}
+
+--------------------------
+current sentence: The debates had an atmosphere of a prize fight and drew crowds in the thousands.
+{Subject: debate, Predicates:  drew had, Objects:  crowd atmosphere}
+
+--------------------------
+current sentence: Lincoln appointed no judges to the United States circuit courts during his time in office.
+{Subject: Lincoln, Predicate: appoint, Object: judge}
+
+--------------------------
+current sentence: Major Henry Rathbone momentarily grappled with Booth, but Booth stabbed him and escaped.
+{Subject: Rathbone, Predicate: grappl, Object: Booth}
+
+--------------------------
+current sentence: DNA analysis is so far being refused by the Grand Army of the Republic museum in Philadelphia.
+{Subject: analysi, Predicate: refus, Object: Philadelphia}
+
+--------------------------
+current sentence: Thomas and Nancy Lincoln were also members of a Separate Baptists church, which had restrictive moral standards and opposed alcohol, dancing, and slavery.
+{Subject: Lincoln, Predicate: were, Object: member}
+
+--------------------------
+current sentence: By the late 1960s, liberals, such as historian Lerone Bennett, were having second thoughts, especially regarding Lincoln's views on racial issues.
+{Subject: liberal, Predicate: have, Object: thought}
+
+--------------------------
+current sentence: A wedding set for January 1, 1841, was canceled when the two broke off their engagement at Lincoln's initiative.
+{Subject: wed, Predicate: cancel, Object: null}
+
+--------------------------
+current sentence: However Copperheads argued that emancipation was a stumbling block to peace and reunification.
+{Subject: Copperhead, Predicate: argu, Object: {Subject: emancipate, Predicate: wa, Object: block}}
+
+--------------------------
+current sentence: After implementing the Emancipation Proclamation, which did not apply to every state, Lincoln increased pressure on Congress to outlaw slavery throughout the entire nation with a constitutional amendment.
+{Subject: Lincoln, Predicate: increas, Object: pressure}
+
+--------------------------
+current sentence: Stephen Johnson Field, a previous California Supreme Court justice, was nominated March 6, 1863 and appointed March 10, 1863, and provided geographic balance, as well as political balance to the court as a Democrat.
+{Subject: Field, Predicates:  appoint provid nominate, Objects:  balance balance March}
+
+--------------------------
+current sentence: He won election to the state legislature.
+{Subject: He, Predicate: won, Object: election}
+
+--------------------------
+current sentence: Historian Allan Nevins says:
+The thunderclap of Sumter produced a startling crystallization of Northern sentiment....Anger swept the land.
+{Subject: Nevin, Predicate: sai, Object: null}
+
+--------------------------
+current sentence: Presented with 303 execution warrants for convicted Santee Dakota who were accused of killing innocent farmers, Lincoln conducted his own personal review of each of these warrants, eventually approving 39 for execution .
+{Subject: Lincoln, Predicate: conduct, Object: review}
+
+--------------------------
+current sentence: Robert Todd Lincoln was born in 1843 and Edward Baker Lincoln in 1846.
+{Subject: Lincoln, Predicate: born, Object: 1843}
+
+--------------------------
+current sentence: Lincoln's Democratic opponents seized on these appointments to accuse him of using the military to ensure his and the Republicans' political aspirations.
+{Subject: opponent, Predicate: seize, Object: appointment}
+
+--------------------------
+current sentence: In it, he stated that "as a fit and necessary military measure, on January 1, 1863, all persons held as slaves in the Confederate states will thenceforward, and forever, be free".
+{Subject: he, Predicate: state, Object: {Subject: person, Predicate: held, Object: null}}
+
+--------------------------
+current sentence: Defenders, such as authors Dirck and Cashin, retorted that he was not as bad as most politicians of his day; and that he was a "moral visionary" who deftly advanced the abolitionist cause, as fast as politically possible.
+{Subject: Defender, Predicate: retort, Object: {Subject: he, Predicate: wa, Object: visionari}}
+
+--------------------------
+current sentence: 1861 inaugural at the Capitol.
+Cannot handle this sentence
+
+--------------------------
+current sentence: The Emancipation Proclamation announced in September gained votes for the Republicans in the rural areas of New England and the upper Midwest, but it lost votes in the cities and the lower Midwest.
+{Subject: Proclamate, Predicate: announc, Object: null}
+
+--------------------------
+current sentence: As Diggins concludes regarding the highly influential Cooper Union speech of early 1860, "Lincoln presented Americans a theory of history that offers a profound contribution to the theory and destiny of republicanism itself."
+{Subject: Lincoln, Predicate: present, Object: theori}
+
+--------------------------
+current sentence: I believe this government cannot endure permanently half slave and half free.
+{Subject: I, Predicate: believe, Object: {Subject: government, Predicate: endure, Object: half}}
+
+--------------------------
+current sentence: In keeping with that sentiment, Lincoln led the moderates regarding Reconstruction policy, and was opposed by the Radical Republicans, under Rep. Thaddeus Stevens, Sen. Charles Sumner and Sen. Benjamin Wade, political allies of the president on other issues.
+{Subject: Lincoln, Predicates:  oppos led, Objects:  alli moderate}
+
+--------------------------
+current sentence: During Early's raid on Washington, D.C. in 1864, Lincoln was watching the combat from an exposed position.
+{Subject: Lincoln, Predicate: watch, Object: combat}
+
+--------------------------
+current sentence: The mid-term elections in 1862 brought the Republicans severe losses due to sharp disfavor with the administration over its failure to deliver a speedy end to the war, as well as rising inflation, new high taxes, rumors of corruption, the suspension of habeas corpus, the military draft law, and fears that freed slaves would undermine the labor market.
+{Subject: election, Predicate: brought, Object: loss}
+
+--------------------------
+current sentence: The administration offered him the consolation prize of secretary or governor of the Oregon Territory.
+{Subject: administrate, Predicate: offer, Object: prize}
+
+--------------------------
+current sentence: Frustrated over the lack of security provided by Kentucky courts, Thomas sold the remaining land he held in Kentucky in 1814, and began planning a move to Indiana, where the land survey process was more reliable and the ability for an individual to retain land titles was more secure.
+{Subject: Thoma, Predicate: sold, Object: land}
+
+--------------------------
+current sentence: Anticipating the war's conclusion, Lincoln pushed a moderate view of Reconstruction, seeking to reunite the nation speedily through a policy of generous reconciliation in the face of lingering and bitter divisiveness.
+{Subject: Lincoln, Predicate: push, Object: view}
+
+--------------------------
+current sentence: Lincoln was largely self-educated.
+{Subject: Lincoln, Predicate: wa, Object: self-educate}
+
+--------------------------
+current sentence: According to William Ensign Lincoln's book The Ancestry of Abraham Lincoln, Nancy was the daughter of Joseph Hanks.
+{Subject: Nanci, Predicate: wa, Object: daughter}
+
+--------------------------
+current sentence: The charter was amended in the public interest to provide a newer, superior, and less expensive route, and the corporation retained the right to demand Barret's payment.
+{Subject: charter, Predicates:  retain amend, Objects:  right interest}
+
+--------------------------
+current sentence: Most of the state's 130,000 German Americans voted Democratic but there was Republican support that a German-language paper could mobilize.
+{Subject: Most, Predicate: vote, Object: Democratic}
+
+--------------------------
+current sentence: Later in life, Mary struggled with the stresses of losing her husband and sons, and Robert Lincoln committed her temporarily to a mental health asylum in 1875.
+{Subject: Mari, Predicates:  commit struggl, Objects:  asylum life}
+
+--------------------------
+current sentence: Realizing Clay was unlikely to win the presidency, Lincoln, who had pledged in 1846 to serve only one term in the House, supported General Zachary Taylor for the Whig nomination in the 1848 presidential election.
+{Subject: Lincoln, Predicate: support, Object: Taylor}
+
+--------------------------
+current sentence: "Willie" Lincoln was born on December 21, 1850, and died of a fever on February 20, 1862.
+{Subject: Lincoln, Predicate: born, Object: December}
+
+--------------------------
+current sentence: Republican politics 1854-60 Slavery and a "House Divided" Further information: Slave and free states and Abraham Lincoln and slavery By the 1850s, slavery was still legal in the southern United States, but had been generally outlawed in the northern states, including Illinois, whose original 1818 Constitution forbade slavery, as required by the Northwest Ordinance.
+{Subject: slaveri, Predicate: wa, Object: legal}
+
+--------------------------
+current sentence: I believe I have no lawful right to do so, and I have no inclination to do so."
+{Subject: I, Predicates:  have believe, Objects:  inclinate {Subject: I, Predicate: have, Object: right}}
+
+--------------------------
+current sentence: But he also vowed not to surrender the forts.
+{Subject: he, Predicate: vow, Object: surrender}
+
+--------------------------
+current sentence: Thomas Lincoln bought or leased several farms in Kentucky, including the Sinking Spring farm, where Abraham was born.
+{Subject: Lincoln, Predicate: bought, Object: farm}
+
+--------------------------
+current sentence: His Amnesty Proclamation of December 8, 1863, offered pardons to those who had not held a Confederate civil office, had not mistreated Union prisoners, and would sign an oath of allegiance.
+{Subject: Proclamate, Predicate: offer, Object: pardon}
+
+--------------------------
+current sentence: Lincoln arranged for an intermediary to make inquiry into Grant's political intentions, and being assured that he had none, submitted to the Senate Grant's promotion to commander of the Union Army.
+{Subject: Lincoln, Predicate: arrang, Object: intermediari}
+
+--------------------------
+current sentence: His primary goal was to reunite the nation.
+{Subject: goal, Predicate: wa, Object: reunite}
+
+--------------------------
+current sentence: President Buchanan and President-elect Lincoln refused to recognize the Confederacy, declaring secession illegal.
+{Subject: Lincoln, Predicate: refus, Object: recognize}
+
+--------------------------
+current sentence: He assumed that political control in the South would pass to white Unionists, reluctant secessionists, and forward-looking former Confederates.
+{Subject: He, Predicate: assum, Object: {Subject: control, Predicate: pass, Object: secessionist}}
+
+--------------------------
+current sentence: Lincoln was viewed by abolitionists as a champion for human liberty.
+{Subject: Lincoln, Predicate: view, Object: abolitionist}
+
+--------------------------
+current sentence: Several claims abound that Lincoln's health was declining before the assassination.
+{Subject: claim, Predicate: abound, Object: {Subject: health, Predicate: declin, Object: assassinate}}
+
+--------------------------
+current sentence: While Republicans were discouraged, Democrats were energized and did especially well in Pennsylvania, Ohio, Indiana, and New York.
+{Subject: Democrat, Predicate: energize, Object: null}
+
+--------------------------
+current sentence: Lincoln is largely responsible for the institution of the Thanksgiving holiday in the United States.
+{Subject: Lincoln, Predicate: i, Object: responsible}
+
+--------------------------
+current sentence: Lincoln was supported by Congress and the northern public for these actions.
+{Subject: Lincoln, Predicate: support, Object: Congress}
+
+--------------------------
+current sentence: Burton argues that Lincoln's republicanism was taken up by the Freedmen as they were emancipated.
+{Subject: Burton, Predicate: argue, Object: {Subject: republicanism, Predicate: taken, Object: Freedmen}}
+
+--------------------------
+current sentence: Historian Mark Noll concludes it ranks "among the small handful of semi-sacred texts by which Americans conceive their place in the world".
+{Subject: Noll, Predicate: conclude, Object: {Subject: it, Predicate: rank, Object: handful}}
+
+--------------------------
+current sentence: On the other hand, the Radicals denounced his policy as too lenient, and passed their own plan, the Wade-Davis Bill, in 1864.
+{Subject: Radical, Predicates:  pass denounc, Objects:  plan polici}
+
+--------------------------
+current sentence: Nevertheless, in 1861, Lincoln justified the war in terms of legalisms , and then in terms of the national duty to guarantee a republican form of government in every state.
+{Subject: Lincoln, Predicate: justifi, Object: war}
+
+--------------------------
+current sentence: Desertions during 1863 were in the thousands and they increased after Fredericksburg.
+{Subject: Desertion, Predicate: were, Object: thousand}
+
+--------------------------
+current sentence: Lincoln presents the first draft of the Emancipation Proclamation to his cabinet.
+{Subject: Lincoln, Predicate: present, Object: draft}
+
+--------------------------
+current sentence: Lincoln rejected the idea, saying, "I will suffer death before I consent... to any concession or compromise which looks like buying the privilege to take possession of this government to which we have a constitutional right."
+{Subject: Lincoln, Predicate: reject, Object: idea}
+
+--------------------------
+current sentence: A political cartoon of Vice President Andrew Johnson and Lincoln, 1865, entitled "The 'Rail Splitter' At Work Repairing the Union."
+{Subject: cartoon, Predicate: entitl, Object: Work}
+
+--------------------------
+current sentence: Lincoln's mother, Nancy, was the daughter of Lucy Shipley Hanks, and was born in what is now Mineral County, West Virginia, then part of Virginia.
+{Subject: mother, Predicate: wa, Object: daughter}
+
+--------------------------
+current sentence: The term "the United States" has historically been used, sometimes in the plural , and other times in the singular, without any particular grammatical consistency.
+{Subject: term, Predicate: us, Object: plural}
+
+--------------------------
+current sentence: However, he was an avid reader and retained a lifelong interest in learning.
+{Subject: he, Predicate: wa, Object: reader}
+
+--------------------------
+current sentence: Days later, when that city fell, Lincoln visited the vanquished Confederate capital.
+Cannot handle this sentence
+
+--------------------------
+current sentence: Other enactments Lincoln adhered to the Whig theory of the presidency, which gave Congress primary responsibility for writing the laws while the Executive enforced them.
+{Subject: enactment, Predicate: adher, Object: theori}
+
+--------------------------
+current sentence: His last descendant, great-grandson Robert Todd Lincoln Beckwith, died in 1985.
+{Subject: descendant, Predicate: di, Object: 1985}
+
+--------------------------
+current sentence: He then decided to become a lawyer and began teaching himself law by reading Blackstone's Commentaries on the Laws of England and other law books.
+{Subject: He, Predicate: decid, Object: become}
+
+--------------------------
+current sentence: He was replaced by George Meade, who followed Lee into Pennsylvania for the Gettysburg Campaign, which was a victory for the Union, though Lee's army avoided capture.
+{Subject: He, Predicate: replac, Object: Meade}
+
+--------------------------
+current sentence: In 1851, he represented the Alton & Sangamon Railroad in a dispute with one of its shareholders, James A. Barret, who had refused to pay the balance on his pledge to buy shares in the railroad on the grounds that the company had changed its original train route.
+{Subject: he, Predicate: represent, Object: Railroad}
+
+--------------------------
+current sentence: On February 27, 1860, New York party leaders invited Lincoln to give a speech at Cooper Union to a group of powerful Republicans.
+{Subject: leader, Predicate: invit, Object: Lincoln}
+
+--------------------------
+current sentence: His second campaign in 1834 was successful.
+{Subject: campaign, Predicate: wa, Object: successful}
+
+--------------------------
+current sentence: However, they both had second thoughts about their relationship.
+{Subject: thei, Predicate: had, Object: thought}
+
+--------------------------
+current sentence: The only resolution of these contradictory positions was for the confederates to fire the first shot; they did just that."
+{Subject: resolution, Predicate: wa, Object: confederate}
+
+--------------------------
+current sentence: After remaining in a coma for nine hours, Lincoln died at 7:22am on April 15.
+{Subject: Lincoln, Predicate: di, Object: 7:22}
+
+--------------------------
+current sentence: At his first speech, when he saw a supporter in the crowd being attacked, Lincoln grabbed the assailant by his "neck and the seat of his trousers" and threw him.
+{Subject: Lincoln, Predicates:  threw grab, Objects:  him assailant}
+
+--------------------------
+current sentence: As Southern states were subdued, critical decisions had to be made as to their leadership while their administrations were re-formed.
+{Subject: decision, Predicate: had, Object: made}
+
+--------------------------
+current sentence: Lincoln closely reviewed the dispatches and interrogated naval officers during their clash in the Battle of Hampton Roads.
+{Subject: Lincoln, Predicates:  interrogate review, Objects:  officer dispatche}
+
+--------------------------
+current sentence: Learning that the President and Grant would be attending Ford's Theatre, Booth formulated a plan with co-conspirators to assassinate Lincoln and Grant at the theater, as well as Vice President Johnson and Secretary of State Seward at their homes.
+{Subject: null, Predicate: null, Object: Learn}
+
+--------------------------
+current sentence: This law repealed the slavery-restricting Missouri Compromise .
+{Subject: law, Predicate: repeal, Object: Compromise}
+
+--------------------------
+current sentence: Lincoln's reaction was to send the strongest of messages to the media about such behavior.
+{Subject: reaction, Predicate: wa, Object: send}
+
+--------------------------
+current sentence: From every side came news of mass meetings, speeches, resolutions, tenders of business support, the muster of companies and regiments, the determined action of governors and legislatures."
+{Subject: resolution, Predicate: came, Object: new}
+
+--------------------------
+current sentence: After a long debate in the House, a second attempt passed Congress on January 31, 1865, and was sent to the state legislatures for ratification.
+{Subject: attempt, Predicate: pass, Object: Congress}
+
+--------------------------
+current sentence: Prior to the family's move to Illinois in 1830, Thomas had acquired an additional twenty acres of land adjacent to his property.
+{Subject: Thoma, Predicate: acquir, Object: acre}
+
+--------------------------
+current sentence: Yet the contest began.
+{Subject: contest, Predicate: began, Object: null}
+
+--------------------------
+current sentence: Yet the contest proceeds."
+Cannot handle this sentence
+
+--------------------------
+current sentence: It is found in nearly all the published speeches of him who now addresses you.
+{Subject: It, Predicate: found, Object: the}
+
+--------------------------
+current sentence: Within a year of the family's arrival in Indiana, Thomas claimed title to 160 acres of Indiana land.
+{Subject: Thoma, Predicate: claim, Object: title}
+
+--------------------------
+current sentence: The Army responded by arresting local Maryland officials.
+{Subject: Armi, Predicate: respond, Object: null}
+
+--------------------------
+current sentence: Eric Foner contrasts the abolitionists and anti-slavery Radical Republicans of the Northeast who saw slavery as a sin, with the conservative Republicans who thought it was bad because it hurt white people and blocked progress.
+{Subject: Foner, Predicate: contrast, Object: Republican}
+
+--------------------------
+current sentence: Randall concludes that, "he was conservative in his complete avoidance of that type of so-called 'radicalism' which involved abuse of the South, hatred for the slaveholder, thirst for vengeance, partisan plotting, and ungenerous demands that Southern institutions be transformed overnight by outsiders."
+{Subject: Randall, Predicate: conclude, Object: {Subject: he, Predicate: wa, Object: conservative}}
+
+--------------------------
+current sentence: Despite the bitterness of the defeat for Lincoln, his articulation of the issues gave him a national political reputation.
+{Subject: articulate, Predicate: gave, Object: reputate}
+
+--------------------------
+current sentence: After Willie's death, Lincoln considered why, from a divine standpoint, the severity of the war was necessary.
+{Subject: Lincoln, Predicate: consider, Object: death}
+
+--------------------------
+current sentence: Lincoln's managers had been adroitly focused on this delegation as well as the others, while following Lincoln's strong dictate to "Make no contracts that bind me".
+{Subject: manager, Predicate: focus, Object: delegate}
+
+--------------------------
+current sentence: The first photographic image of the new president As Lincoln's election became evident, secessionists made clear their intent to leave the Union before he took office the next March.
+{Subject: secessionist, Predicate: made, Object: {Subject: image, Predicate: became, Object: election}}
+
+--------------------------
+current sentence: Elected to the United States House of Representatives in 1846, Lincoln promoted rapid modernization of the economy through banks, tariffs, and railroads.
+{Subject: Lincoln, Predicate: promot, Object: modernize}
+
+--------------------------
+current sentence: Lincoln's followers organized a campaign team led by David Davis, Norman Judd, Leonard Swett, and Jesse DuBois, and Lincoln received his first endorsement to run for the presidency.
+{Subject: follower, Predicates:  receiv organize, Objects:  endorsement team}
+
+--------------------------
+current sentence: Donald concludes that, "His repeated efforts to avoid collision in the months between inauguration and the firing on Ft. Sumter showed he adhered to his vow not to be the first to shed fraternal blood.
+{Subject: Donald, Predicate: conclude, Object: {Subject: effort, Predicate: show, Object: {Subject: he, Predicate: adher, Object: first}}}
+
+--------------------------
+current sentence: Instead of holding Lincoln in contempt of court as was expected, the judge, a Democrat, reversed his ruling, allowing the evidence and acquitting Harrison.
+{Subject: judge, Predicate: revers, Object: rule}
+
+--------------------------
+current sentence: By the end of 1863, at Lincoln's direction, General Lorenzo Thomas had recruited 20 regiments of blacks from the Mississippi Valley.
+{Subject: Thoma, Predicate: recruit, Object: regiment}
+
+--------------------------
+current sentence: He was the only Whig in the Illinois delegation, but he showed his party loyalty by participating in almost all votes and making speeches that echoed the party line.
+{Subject: He, Predicate: wa, Object: Whig}
+
+--------------------------
+current sentence: The identity of Lincoln's maternal grandfather is unclear.
+{Subject: identiti, Predicate: i, Object: unclear}
+
+--------------------------
+current sentence: Redefining the republic and republicanism Lincoln in February 1865, about two months before his death.
+{Subject: null, Predicate: Redefin, Object: Lincoln}
+
+--------------------------
+current sentence: After arriving in New Orleans�and witnessing slavery firsthand�Lincoln returned to New Salem, where he remained for the next six years.
+{Subject: Lincoln, Predicate: return, Object: Salem}
+
+--------------------------
+current sentence: Please help improve this section by adding citations to reliable sources.
+{Subject: null, Predicate: Please, Object: help}
+
+--------------------------
+current sentence: Americans asked, "What would Lincoln do?"
+{Subject: American, Predicate: ask, Object: {Subject: Lincoln, Predicate: do, Object: What}}
+
+--------------------------
+current sentence: He had attained local popularity and could draw crowds as a natural raconteur in New Salem, though he lacked an education, powerful friends, and money, which may be why he lost.
+{Subject: He, Predicates:  draw attain, Objects:  crowd populariti}
+
+--------------------------
+current sentence: The Declaration's emphasis on freedom and equality for all, in contrast to the Constitution's tolerance of slavery, shifted the debate.
+{Subject: emphasi, Predicate: shift, Object: debate}
+
+--------------------------
+current sentence: By contrast, the National Union Party was united and energized as Lincoln made emancipation the central issue, and state Republican parties stressed the perfidy of the Copperheads.
+{Subject: Parti, Predicates:  stress energize unit, Objects:  perfidi contrast}
+
+--------------------------
+current sentence: The decision by the Illinois Supreme Court has been cited by numerous other courts in the nation.
+{Subject: decision, Predicate: cite, Object: court}
+
+--------------------------
+current sentence: On December 2, 1819, Lincoln's father married Sarah "Sally" Bush Johnston, a widow from Elizabethtown, Kentucky, with three children of her own.
+{Subject: father, Predicate: marri, Object: Johnston}
+
+--------------------------
+current sentence: By February 1, 1861, Florida, Mississippi, Alabama, Georgia, Louisiana, and Texas followed.
+{Subject: Louisiana, Predicate: follow, Object: Februari}
+
+--------------------------
+current sentence: Grant had lost a third of his army, and Lincoln asked what Grant's plans were, to which the general replied, "I propose to fight it out on this line if it takes all summer."
+{Subject: Grant, Predicate: lost, Object: third}
+
+--------------------------
+current sentence: Confederate Vice President Stephens led a group to meet with Lincoln, Seward, and others at Hampton Roads.
+{Subject: Stephen, Predicate: led, Object: group}
+
+--------------------------
+current sentence: In 1860 Lincoln noted that the family's move to Indiana was "partly on account of slavery"; but mainly due to land title difficulties in Kentucky.
+{Subject: Lincoln, Predicate: note, Object: {Subject: move, Predicate: wa, Object: slaveri}}
+
+--------------------------
+current sentence: In June 1864, Lincoln approved the Yosemite Grant enacted by Congress, which provided unprecedented federal protection for the area now known as Yosemite National Park.
+{Subject: Lincoln, Predicate: approv, Object: Grant}
+
+--------------------------
+current sentence: On May 9-10, 1860, the Illinois Republican State Convention was held in Decatur.
+{Subject: Convention, Predicate: held, Object: Mai}
+
+--------------------------
+current sentence: He ordered the military to seize the two papers.
+{Subject: He, Predicate: order, Object: militari}
+
+--------------------------
+current sentence: In fact, he later represented a bridge company against a riverboat company in a landmark case involving a canal boat that sank after hitting a bridge.
+{Subject: he, Predicate: represent, Object: compani}
+
+--------------------------
+current sentence: Lincoln's portrait appears on two denominations of United States currency, the penny and the $5 bill.
+{Subject: portrait, Predicate: appear, Object: denominate}
+
+--------------------------
+current sentence: He also complied with the customary obligation of a son giving his father all earnings from work done outside the home until the age of twenty-one.
+{Subject: He, Predicate: compli, Object: obligate}
+
+--------------------------
+current sentence: Eric Foner argues that:
+Unlike Sumner and other Radicals, Lincoln did not see Reconstruction as an opportunity for a sweeping political and social revolution beyond emancipation.
+{Subject: Foner, Predicate: argue, Object: {Subject: Lincoln, Predicate: see, Object: Reconstruction}}
+
+--------------------------
+current sentence: The passage of the Homestead Act and the Pacific Railway Acts was made possible by the absence of Southern congressmen and senators who had opposed the measures in the 1850s.
+{Subject: passage, Predicate: made, Object: absence}
+
+--------------------------
+current sentence: These are often based on photographs appearing to show weight loss and muscle wasting.
+{Subject: These, Predicate: base, Object: photograph}
+
+--------------------------
+current sentence: Reconstruction Main article: Reconstruction Era Reconstruction began during the war, as Lincoln and his associates anticipated questions of how to reintegrate the conquered southern states, and how to determine the fates of Confederate leaders and freed slaves.
+{Subject: null, Predicate: null, Object: article}
+
+--------------------------
+current sentence: The principals stood in stark contrast both physically and politically.
+{Subject: principal, Predicate: stood, Object: contrast}
+
+--------------------------
+current sentence: By the 1970s Lincoln had become a hero to political conservatives for his intense nationalism, support for business, his insistence on stopping the spread of human bondage, his acting in terms of Lockean and Burkean principles on behalf of both liberty and tradition, and his devotion to the principles of the Founding Fathers.
+{Subject: Lincoln, Predicate: become, Object: 1970}
+
+--------------------------
+current sentence: Chief Justice Roger B. Taney opined that blacks were not citizens, and derived no rights from the Constitution.
+{Subject: Tanei, Predicates:  deriv opin, Objects:  right {Subject: black, Predicate: were, Object: citizen}}
+
+--------------------------
+current sentence: On February 23, 1861, he arrived in disguise in Washington, D.C., which was placed under substantial military guard.
+{Subject: he, Predicate: arriv, Object: Februari}
+
+--------------------------
+current sentence: There were attempts at compromise.
+{Subject: attempt, Predicate: were, Object: null}
+
+--------------------------
+current sentence: In 1863, Lincoln declared the final Thursday in November of that year to be a day of Thanksgiving.
+{Subject: Lincoln, Predicate: declar, Object: final}
+
+--------------------------
+current sentence: It also established a national currency.
+{Subject: It, Predicate: establish, Object: currence}
+
+--------------------------
+current sentence: Painted by Francis Bicknell Carpenter in 1864 Lincoln understood that the Federal government's power to end slavery was limited by the Constitution, which before 1865, committed the issue to individual states.
+{Subject: {Subject: null, Predicate: Paint, Object: Carpenter}, Predicate: understood, Object: {Subject: power, Predicate: limit, Object: Constitution}}
+
+--------------------------
+current sentence: The seizure lasted for two days.
+{Subject: seizure, Predicate: last, Object: dai}
+
+--------------------------
+current sentence: Bell won Virginia, Tennessee, and Kentucky, and Breckinridge won the rest of the South.
+{Subject: Bell, Predicates:  won won, Objects:  rest Kentucki}
+
+--------------------------
+current sentence: There has never been any reasonable cause for such apprehension.
+{Subject: null, Predicate: been, Object: cause}
+
+--------------------------
+current sentence: Kentucky tried to be neutral.
+{Subject: Kentucki, Predicate: tri, Object: neutral}
+
+--------------------------
+current sentence: They became the parents of three children: Sarah, born on February 10, 1807; Abraham, on February 12, 1809; and another son, Thomas, who died in infancy.
+{Subject: Thei, Predicate: became, Object: Abraham}
+
+--------------------------
+current sentence: Assuming command for the Union in the war After the Battle of Fort Sumter, Lincoln realized the importance of taking immediate executive control of the war and making an overall strategy to put down the rebellion.
+{Subject: Lincoln, Predicate: realize, Object: importance}
+
+--------------------------
+current sentence: Lincoln spent the next 100 days preparing the army and the nation for emancipation, while Democrats rallied their voters in the 1862 off-year elections by warning of the threat freed slaves posed to northern whites.
+{Subject: Lincoln, Predicate: spent, Object: {Subject: dai, Predicate: pose, Object: white}}
+
+--------------------------
+current sentence: Captain Lincoln was killed in an Indian raid in 1786.
+{Subject: Lincoln, Predicate: kill, Object: raid}
+
+--------------------------
+current sentence: Journalist Noah Brooks reported, "No man ever before made such an impression on his first appeal to a New York audience."
+{Subject: Brook, Predicate: report, Object: {Subject: man, Predicate: made, Object: impression}}
+
+--------------------------
+current sentence: Despite his dissatisfaction with McClellan's failure to reinforce Pope, Lincoln was desperate, and restored him to command of all forces around Washington, to the dismay of all in his cabinet but Seward.
+{Subject: Lincoln, Predicate: null, Object: desperate}
+
+--------------------------
+current sentence: Others simply claim he had Marfan's syndrome, based on his tall appearance with spindly fingers, and the association of possible aortic regurgitation, which can cause bobbing of the head - based on blurring of Lincoln's head in photographs, which back then had a long exposure time.
+{Subject: Other, Predicate: claim, Object: {Subject: he, Predicate: had, Object: syndrome}}
+
+--------------------------
+current sentence: Lincoln has often been portrayed by Hollywood, almost always in a flattering light.
+{Subject: Lincoln, Predicate: portrai, Object: Hollywood}
+
+--------------------------
+current sentence: On April 19, mobs in Baltimore, which controlled the rail links, attacked Union troops who were changing trains, and local leaders' groups later burned critical rail bridges to the capital.
+{Subject: mob, Predicates:  burn attack, Objects:  bridge troop}
+
+--------------------------
+current sentence: From the start, it was clear that bipartisan support would be essential to success in the war effort, and any manner of compromise alienated factions on both sides of the aisle, such as the appointment of Republicans and Democrats to command positions in the Union Army.
+{Subject: it, Predicate: wa, Object: clear}
+
+--------------------------
+current sentence: Douglas' provision, which Lincoln opposed, specified settlers had the right to determine locally whether to allow slavery in new U.S. territory, rather than have such a decision restricted by the national Congress.
+{Subject: settler, Predicate: had, Object: right}
+
+--------------------------
+current sentence: He signed into law Senator Charles Sumner's Freedmen's Bureau bill that set up a temporary federal agency designed to meet the immediate material needs of former slaves.
+{Subject: He, Predicate: sign, Object: {Subject: that, Predicate: set, Object: agence}}
+
+--------------------------
+current sentence: Douglas won Missouri, and split New Jersey with Lincoln.
+{Subject: Dougla, Predicates:  split won, Objects:  Jersei Missouri}
+
+--------------------------
+current sentence: This call forced the states to choose sides.
+{Subject: call, Predicate: forc, Object: state}
+
+--------------------------
+current sentence: The most famous and most visited memorials are the Lincoln Memorial in Washington, D.C.; Lincoln's sculpture on Mount Rushmore; Ford's Theatre and Petersen House in Washington and the Abraham Lincoln Presidential Library and Museum, located in Springfield, Illinois, not far from Lincoln's home and his tomb.
+{Subject: memorial, Predicate: are, Object: Memorial}
+
+--------------------------
+current sentence: His stance closely followed Henry Clay in supporting the American Colonization Society program of making the abolition of slavery practical by its advocation and helping the freed slaves to settle in Liberia in Africa.
+{Subject: stance, Predicate: follow, Object: Clai}
+
+--------------------------
+current sentence: After leading in the first six rounds of voting in the Illinois assembly, his support began to dwindle, and Lincoln instructed his backers to vote for Lyman Trumbull, who defeated opponent Joel Aldrich Matteson.
+{Subject: support, Predicates:  instruct began, Objects:  backer dwindle}
+
+--------------------------
+current sentence: While the war was still being waged, Lincoln faced reelection in 1864.
+{Subject: Lincoln, Predicate: face, Object: reelection}
+
+--------------------------
+current sentence: Grant's move to Petersburg resulted in the obstruction of three railroads between Richmond and the South.
+{Subject: move, Predicate: result, Object: obstruction}
+
+--------------------------
+current sentence: In the wake of Grant's casualties in his campaign against Lee, Lincoln had considered yet another executive call for a military draft, but it was never issued.
+{Subject: Lincoln, Predicate: consider, Object: call}
+
+--------------------------
+current sentence: What I do about slavery, and the colored race, I do because I believe it helps to save the Union; and what I forbear, I forbear because I do not believe it would help to save the Union... I have here stated my purpose according to my view of official duty; and I intend no modification of my oft-expressed personal wish that all men everywhere could be free.
+{Subject: I, Predicates:  state intend forbear do, Objects:  purpose modificate }
+
+--------------------------
+current sentence: Lincoln concluded that the Civil War had a profound objective: a new birth of freedom in the nation.
+{Subject: Lincoln, Predicate: conclud, Object: {Subject: War, Predicate: had, Object: objective}}
+
+--------------------------
+current sentence: Lincoln's flag-enfolded body was then escorted in the rain to the White House by bareheaded Union officers, while the city's church bells rang.
+{Subject: bodi, Predicate: escort, Object: rain}
+
+--------------------------
+current sentence: The creation of the system of national banks by the National Banking Act provided a strong financial network in the country.
+{Subject: creation, Predicate: provid, Object: network}
+
+--------------------------
+current sentence: As Douglas and the other candidates went through with their campaigns, Lincoln was the only one of them who gave no speeches.
+Cannot handle this sentence
+
+--------------------------
+current sentence: Britain protested vehemently while the U.S. cheered.
+{Subject: Britain, Predicate: protest, Object: null}
+
+--------------------------
+current sentence: McClellan's letter incensed Radical Republicans, who successfully pressured Lincoln to appoint John Pope, a Republican, as head of the new Army of Virginia.
+{Subject: letter, Predicate: incens, Object: Republican}
+
+--------------------------
+current sentence: The commander of Fort Sumter, South Carolina, Major Robert Anderson, sent a request for provisions to Washington, and the execution of Lincoln's order to meet that request was seen by the secessionists as an act of war.
+{Subject: commander, Predicate: sent, Object: request}
+
+--------------------------
+current sentence: As the war progressed, his complex moves toward ending slavery began with the Emancipation Proclamation of 1863.
+{Subject: complex, Predicate: move, Object: null}
+
+--------------------------
+current sentence: President Johnson was sworn in at 10:00am, less than 3 hours after Lincoln's death.
+{Subject: Johnson, Predicate: sworn, Object: 10:00}
+
+--------------------------
+current sentence: After the state Republican party convention nominated him for the U.S. Senate in 1858, Lincoln delivered his House Divided Speech, drawing on Mark 3:25, "A house divided against itself cannot stand.
+{Subject: convention, Predicate: nominate, Object: him}
+
+--------------------------
+current sentence: Abraham Lincoln was born February 12, 1809, the second child of Thomas and Nancy Hanks Lincoln, in a one-room log cabin on the Sinking Spring Farm in Hardin County, Kentucky .
+{Subject: Lincoln, Predicate: born, Object: child}
+
+--------------------------
+current sentence: I hate it because it deprives our republican example of its just influence in the world..."
+In late 1854, Lincoln ran as a Whig for the U.S. Senate seat from Illinois.
+{Subject: I, Predicate: hate, Object: it}
+
+--------------------------
+current sentence: "Stanton and Lincoln virtually conducted the war together," say Thomas and Hyman.
+{Subject: null, Predicate: sai, Object: {Subject: Lincoln, Predicate: conduct, Object: war}}
+
+--------------------------
+current sentence: In 272 words, and three minutes, Lincoln asserted the nation was born not in 1789, but in 1776, "conceived in Liberty, and dedicated to the proposition that all men are created equal".
+{Subject: Lincoln, Predicate: assert, Object: {Subject: nation, Predicate: born, Object: 1776}}
+
+--------------------------
+current sentence: Abraham Lincoln was the 16th President of the United States, serving from March 1861 until his assassination in April 1865.
+{Subject: Lincoln, Predicate: wa, Object: President}
+
+--------------------------
+current sentence: Lincoln also presided over the expansion of the federal government's economic influence in several other areas.
+{Subject: Lincoln, Predicate: presid, Object: area}
+
+--------------------------
+current sentence: Lincoln's paternal grandfather and namesake, Captain Abraham Lincoln, moved the family from Virginia to Jefferson County, Kentucky in the 1780s.
+{Subject: namesake, Predicate: move, Object: famili}
+
+--------------------------
+current sentence: But time and again during the war, Lincoln, after initial opposition, had come to embrace positions first advanced by abolitionists and Radical Republicans.....
+{Subject: again, Predicate: come, Object: embrace}
+
+--------------------------
+current sentence: Lincoln led the United States through its Civil War�its bloodiest war and its greatest moral, constitutional, and political crisis.
+{Subject: Lincoln, Predicate: led, Object: State}
+
+--------------------------
+current sentence: The president-elect then evaded possible assassins in Baltimore, who were uncovered by Lincoln's head of security, Allan Pinkerton.
+{Subject: president-elect, Predicate: evad, Object: assassin}
+
+--------------------------
+current sentence: Lincoln was a master politician, bringing together�and holding together�all the main factions of the Republican Party, and bringing in War Democrats such as Edwin M. Stanton and Andrew Johnson as well.
+{Subject: Lincoln, Predicate: wa, Object: politician}
+
+--------------------------
+current sentence: Sharing this fear, Lincoln wrote and signed a pledge that, if he should lose the election, he would still defeat the Confederacy before turning over the White House:
+This morning, as for some days past, it seems exceedingly probable that this Administration will not be re-elected.
+{Subject: Lincoln, Predicates:  sign wrote, Objects:  pledge }
+
+--------------------------
+current sentence: That March he began his political career with his first campaign for the Illinois General Assembly.
+{Subject: he, Predicate: began, Object: career}
+
+--------------------------
+current sentence: Historians agree that it is impossible to predict exactly what Lincoln would have done about Reconstruction if he had lived, but they make projections based on his known policy positions and political acumen.
+{Subject: Historian, Predicate: agree, Object: {Subject: it, Predicate: i, Object: impossible}}
+
+--------------------------
+current sentence: Born in Hodgenville, Kentucky, Lincoln grew up on the western frontier in Kentucky and Indiana.
+{Subject: Lincoln, Predicate: grew, Object: frontier}
+
+--------------------------
+current sentence: In presidential ranking polls conducted in the United States since 1948, Lincoln has been rated at the very top in the majority of polls: Schlesinger 1948, Schlesinger 1962, 1982 Murray Blessing Survey, Chicago Tribune 1982 poll, Schlesinger 1996, CSPAN 1996, Ridings-McIver 1996, Time 2008, and CSPAN 2009.
+{Subject: Lincoln, Predicate: rate, Object: poll}
+
+--------------------------
+current sentence: He attained a reputation for brawn and audacity after a very competitive wrestling match with the renowned leader of a group of ruffians known as "the Clary's Grove boys".
+{Subject: He, Predicate: attain, Object: reputate}
+
+--------------------------
+current sentence: To learn technical military terms, Lincoln borrowed and studied Henry Halleck's book, Elements of Military Art and Science from the Library of Congress.
+{Subject: Lincoln, Predicates:  studi borrow, Objects:  book }
+
+--------------------------
+current sentence: At 6feet 4inches , he was tall and "strong enough to intimidate any rival".
+{Subject: he, Predicate: wa, Object: strong}
+
+--------------------------
+current sentence: That proposed amendment would have protected slavery in states where it already existed and would have guaranteed that Congress would not interfere with slavery without Southern consent.
+{Subject: That, Predicate: propos, Object: {Subject: amendment, Predicate: protect, Object: slaveri}}
+
+--------------------------
+current sentence: If I could save the Union without freeing any slave I would do it, and if I could save it by freeing all the slaves I would do it; and if I could save it by freeing some and leaving others alone I would also do that.
+{Subject: I, Predicate: do, Object: that}
+
+--------------------------
+current sentence: The stage was set for his address at the Gettysburg battlefield cemetery on November 19, 1863.
+{Subject: stage, Predicate: set, Object: address}
+
+--------------------------
+current sentence: The late President lay in state in the East Room, and then in the Capitol Rotunda from April 19 through April 21.
+{Subject: President, Predicate: lai, Object: April}
+
+--------------------------
+current sentence: In January 1862, after many complaints of inefficiency and profiteering in the War Department, Lincoln replaced Simon Cameron with Edwin Stanton as War Secretary.
+{Subject: Lincoln, Predicate: replac, Object: Cameron}
+
+--------------------------
+current sentence: They supported the president's Proclamation, but suggested the removal of General George B. McClellan as commander of the Union Army.
+{Subject: Thei, Predicate: support, Object: Proclamate}
+
+--------------------------
+current sentence: Mary did return in November 1836, and Lincoln courted her for a time.
+{Subject: Mari, Predicates:  court return, Objects:  her November}
+
+--------------------------
+current sentence: In 1864, Booth formulated a plan to kidnap Lincoln in exchange for the release of Confederate prisoners.
+{Subject: Booth, Predicate: formulate, Object: plan}
+
+--------------------------
+current sentence: He argued before and during his election that the eventual extinction of slavery would result from preventing its expansion into new U.S. territory.
+{Subject: He, Predicate: argu, Object: {Subject: extinction, Predicate: result, Object: null}}
+
+--------------------------
+current sentence: To fill Chief Justice Taney's seat on the Supreme Court, he named the choice of the Radicals, Salmon P. Chase, who Lincoln believed would uphold the emancipation and paper money policies.
+{Subject: he, Predicate: name, Object: {Subject: choice, Predicate: uphold, Object: emancipate}}
+
+--------------------------
+current sentence: In recent years, historians such as Harry Jaffa, Herman Belz, John Diggins, Vernon Burton and Eric Foner have stressed Lincoln's redefinition of republican values.
+{Subject: historian, Predicate: stress, Object: redefinition}
+
+--------------------------
+current sentence: Foner argues that Lincoln was a moderate in the middle, opposing slavery primarily because it violated the republicanism principles of the Founding Fathers, especially the equality of all men and democratic self-government as expressed in the Declaration of Independence.
+{Subject: Foner, Predicate: argue, Object: {Subject: Lincoln, Predicate: wa, Object: moderate}}
+
+--------------------------
+current sentence: At its 1864 convention, the Republican Party selected Johnson, a War Democrat from the Southern state of Tennessee, as his running mate.
+{Subject: Parti, Predicate: select, Object: Johnson}
+
+--------------------------
+current sentence: On March 4, 1865, Lincoln delivered his second inaugural address.
+{Subject: Lincoln, Predicate: deliver, Object: address}
+
+--------------------------
+current sentence: Although Lincoln won only a plurality of the popular vote, his victory in the electoral college was decisive: Lincoln had 180 and his opponents added together had only 123.
+{Subject: victori, Predicate: wa, Object: decisive}
+
+--------------------------
+current sentence: Because he had originally agreed not to run for a second term in Congress, and because his opposition to the Mexican-American War was unpopular among Illinois voters, Lincoln returned to Springfield and resumed his successful law practice.
+{Subject: Lincoln, Predicates:  resum return, Objects:  practice Springfield}
+
+--------------------------
+current sentence: Some of his neighbors and family members thought for a time that he was lazy for all his "reading, scribbling, writing, ciphering, writing Poetry, etc.", and must have done it to avoid manual labor.
+{Subject: Some, Predicate: thought, Object: {Subject: he, Predicate: wa, Object: lazi}}
+
+--------------------------
+current sentence: In 1858, while taking part in a series of highly publicized debates with his opponent and rival, Democrat Stephen A. Douglas, Lincoln spoke out against the expansion of slavery, but lost the U.S. Senate race to Douglas.
+{Subject: Lincoln, Predicate: spoke, Object: 1858}
+
+--------------------------
+current sentence: Major Northern newspaper editors expected victory within 90 days.
+{Subject: editor, Predicate: expect, Object: victori}
+
+--------------------------
+current sentence: He fights."
+{Subject: He, Predicate: fight, Object: null}
+
+--------------------------
+current sentence: Indeed, the most ample evidence to the contrary has all the while existed and been open to their inspection.
+{Subject: evidence, Predicate: ha, Object: while}
+
+--------------------------
+current sentence: He kept close tabs on all phases of the military effort, consulted with governors, and selected generals based on their past success .
+{Subject: He, Predicate: kept, Object: tab}
+
+--------------------------
+current sentence: Drawing on remnants of the old Whig party, and on disenchanted Free Soil, Liberty, and Democratic Party members, he was instrumental in forging the shape of the new Republican Party.
+{Subject: he, Predicate: wa, Object: instrumental}
+
+--------------------------
+current sentence: Nevada, which became the third State in the far-west of the continent, was admitted as a free state on October 31, 1864.
+{Subject: Nevada, Predicate: admit, Object: state}
+
+--------------------------
+current sentence: On June 19, 1862, endorsed by Lincoln, Congress passed an act banning slavery on all federal territory.
+{Subject: Congress, Predicate: pass, Object: act}
+
+--------------------------
+current sentence: Lincoln's comment on the signing of the Proclamation was: "I never, in my life, felt more certain that I was doing right, than I do in signing this paper."
+{Subject: comment, Predicate: wa, Object: null}
+
+--------------------------
+current sentence: Grant's army moved south, crossed the James River, forcing a siege and trench warfare outside Petersburg, Virginia.
+{Subject: armi, Predicate: move, Object: null}
+
+--------------------------
+current sentence: Though the Republican legislative candidates won more popular votes, the Democrats won more seats, and the legislature re-elected Douglas to the Senate.
+{Subject: Democrat, Predicate: won, Object: seat}
+
+--------------------------
+current sentence: As a condition for its admission, West Virginia's constitution was required to provide for the gradual abolition of slavery.
+{Subject: constitution, Predicate: requir, Object: condition}
+
+--------------------------
+current sentence: After the Union defeat at the First Battle of Bull Run and the retirement of the aged Winfield Scott in late 1861, Lincoln appointed Major General George B. McClellan general-in-chief of all the Union armies.
+{Subject: Lincoln, Predicate: appoint, Object: defeat}
+
+--------------------------
+current sentence: Lincoln, however, did tacitly support the proposed Corwin Amendment to the Constitution, which passed Congress before Lincoln came into office and was then awaiting ratification by the states.
+{Subject: Lincoln, Predicate: support, Object: Amendment}
+
+--------------------------
+current sentence: Fr�mont was already under a cloud with charges of negligence in his command of the Department of the West compounded with allegations of fraud and corruption.
+{Subject: mont, Predicate: wa, Object: cloud}
+
+--------------------------
+current sentence: Lincoln appeared before the Illinois Supreme Court in 175 cases, in 51 as sole counsel, of which 31 were decided in his favor.
+{Subject: Lincoln, Predicate: appear, Object: Court}
+
+--------------------------
+current sentence: Lincoln believed that curtailing slavery in these ways would economically expunge it, as envisioned by the Founding Fathers, under the constitution.
+{Subject: Lincoln, Predicate: believ, Object: {Subject: {Subject: null, Predicate: curtail, Object: slaveri}, Predicate: expunge, Object: it}}
+
+--------------------------
+current sentence: Although he said he personally wished all men could be free, Lincoln stated that the primary goal of his actions as the U.S. president was that of preserving the Union:
+My paramount object in this struggle is to save the Union, and is not either to save or to destroy slavery.
+{Subject: Lincoln, Predicate: state, Object: null}
+
+--------------------------
+current sentence: Doctor Charles Leale, an Army surgeon, found the President unresponsive, barely breathing and with no detectable pulse.
+{Subject: Leale, Predicate: found, Object: unresponsive}
+
+--------------------------
+current sentence: On foreign and military policy, Lincoln spoke out against the Mexican-American War, which he attributed to President Polk's desire for "military glory�that attractive rainbow, that rises in showers of blood".
+{Subject: Lincoln, Predicate: spoke, Object: polici}
+
+--------------------------
+current sentence: The Lincolns' fourth son, Thomas "Tad" Lincoln, was born on April 4, 1853, and died of heart failure at the age of 18 on July 16, 1871.
+{Subject: son, Predicate: born, Object: April}
+
+--------------------------
+current sentence: With the great Union victory at the Battle of Gettysburg in July 1863, and the defeat of the Copperheads in the Ohio election in the fall, Lincoln maintained a strong base of party support and was in a strong position to redefine the war effort, despite the New York City draft riots.
+{Subject: Lincoln, Predicate: maintain, Object: base}
+
+--------------------------
+current sentence: At that time, senators were elected by the state legislature.
+{Subject: senate, Predicate: elect, Object: time}
+
+--------------------------
+current sentence: Bennett won wide attention when he called Lincoln a white supremacist in 1968.
+{Subject: Bennett, Predicate: won, Object: attention}
+
+--------------------------
+current sentence: Lincoln said:
+Fondly do we hope�fervently do we pray�that this mighty scourge of war may speedily pass away.
+{Subject: Lincoln, Predicate: said, Object: null}
+
+--------------------------
+current sentence: The party did the leg work that produced majorities across the North, and produced an abundance of campaign posters, leaflets, and newspaper editorials.
+{Subject: parti, Predicate: did, Object: work}
+
+--------------------------
+current sentence: The law assigned land for a lease of three years with the ability to purchase title for the freedmen.
+{Subject: law, Predicate: assign, Object: land}
+
+--------------------------
+current sentence: The Morrill Land-Grant Colleges Act, also signed in 1862, provided government grants for agricultural colleges in each state.
+{Subject: Act, Predicate: provid, Object: grant}
+
+--------------------------
+current sentence: African-Americans were especially moved.
+{Subject: African-American, Predicate: move, Object: null}
+
+--------------------------
+current sentence: At the 1856 Republican National Convention, Lincoln placed second in the contest to become the party's candidate for vice president.
+{Subject: Lincoln, Predicate: place, Object: Convention}
+
+--------------------------
+current sentence: He also made major decisions on Union war strategy, including a naval blockade that shut down the South's normal trade, moves to take control of Kentucky and Tennessee, and using gunboats to gain control of the southern river system.
+{Subject: He, Predicates:  us made, Objects:  gunboat {Subject: decision, Predicate: move, Object: take}}
+
+--------------------------
+current sentence: Douglas said that Lincoln was defying the authority of the U.S. Supreme Court and the Dred Scott decision.
+{Subject: Dougla, Predicate: said, Object: {Subject: Lincoln, Predicate: defi, Object: authoriti}}
+
+--------------------------
+current sentence: He felt such action could only be taken by the Commander-in-Chief using war powers granted to the president by the Constitution, and Lincoln was planning to take that action.
+{Subject: He, Predicate: felt, Object: {Subject: action, Predicate: taken, Object: Commander-in-Chief}}
+
+--------------------------
+current sentence: Lincoln biographers James G. Randall and Richard Current, according to David Lincove, argue that:
+It is likely that had he lived, Lincoln would have followed a policy similar to Johnson's, that he would have clashed with congressional Radicals, that he would have produced a better result for the freedmen than occurred, and that his political skills would have helped him avoid Johnson's mistakes.
+{Subject: Current, Predicate: argue, Object: Lincove}
+
+--------------------------
+current sentence: Franklin D. Roosevelt, preparing America for war, used the words of the Civil War president to clarify the threat posed by Germany and Japan.
+{Subject: Roosevelt, Predicate: us, Object: word}
+
+--------------------------
+current sentence: Lincoln stated Douglas' popular sovereignty theory was a threat to the nation's morality and that Douglas represented a conspiracy to extend slavery to free states.
+{Subject: Lincoln, Predicate: state, Object: {Subject: theori, Predicate: wa, Object: threat}}
+
+--------------------------
+current sentence: When Lincoln vetoed the bill, the Radicals retaliated by refusing to seat representatives elected from Louisiana, Arkansas, and Tennessee.
+{Subject: Radical, Predicate: elect, Object: Louisiana}
+
+--------------------------
+current sentence: Lincoln received 1,866,452 votes, Douglas 1,376,957 votes, Breckinridge 849,781 votes, and Bell 588,789 votes.
+{Subject: Lincoln, Predicate: receiv, Object: vote}
+
+--------------------------
+current sentence: Many, though not all, in the South considered Lincoln as a man of outstanding ability.
+{Subject: Mani, Predicate: consider, Object: Lincoln}
+
+--------------------------
+current sentence: However, a land title dispute soon forced the Lincolns to move.
+{Subject: dispute, Predicate: forc, Object: Lincoln}
+
+--------------------------
+current sentence: She died at the age of 22 on August 25, 1835, most likely of typhoid fever.
+{Subject: She, Predicate: di, Object: age}
+
+--------------------------
+current sentence: I cannot but hate it.
+{Subject: I, Predicate: hate, Object: it}
+
+--------------------------
+current sentence: Historian Allan Nevins argued that the newly inaugurated Lincoln made three miscalculations: underestimating the gravity of the crisis, exaggerating the strength of Unionist sentiment in the South, and not realizing the Southern Unionists were insisting there be no invasion.
+{Subject: Nevin, Predicate: argu, Object: {Subject: Lincoln, Predicate: made, Object: miscalculate}}
+
+--------------------------
+current sentence: Twice a year for 16 years, 10 weeks at a time, he appeared in county seats in the midstate region when the county courts were in session.
+{Subject: he, Predicate: appear, Object: {Subject: null, Predicate: null, Object: year}}
+
+--------------------------
+current sentence: Lincoln only vetoed four bills passed by Congress.
+{Subject: Lincoln, Predicate: veto, Object: bill}
+
+--------------------------
+current sentence: Lincoln painstakingly monitored the telegraphic reports coming into the War Department in Washington, D.C.
+{Subject: null, Predicate: null, Object: Lincoln}
+
+--------------------------
+current sentence: The Trent Affair of late 1861 threatened war with Great Britain.
+{Subject: Affair, Predicate: threaten, Object: war}
+
+--------------------------
+current sentence: Lincoln removed McClellan as general-in-chief and appointed Henry Wager Halleck in March 1862, after McClellan's "Harrison's Landing Letter", in which he offered unsolicited political advice to Lincoln urging caution in the war effort.
+{Subject: Lincoln, Predicates:  appoint remov, Objects:  Halleck McClellan}
+
+--------------------------
+current sentence: Throughout the 1850s, Lincoln doubted the prospects of civil war, and his supporters rejected claims that his election would incite secession.
+{Subject: Lincoln, Predicates:  reject doubt, Objects:  claim prospect}
+
+--------------------------
+current sentence: McClellan, a young West Point graduate, railroad executive, and Pennsylvania Democrat, took several months to plan and attempt his Peninsula Campaign, longer than Lincoln wanted.
+{Subject: McClellan, Predicate: took, Object: month}
+
+--------------------------
+current sentence: Lincoln was close to the Todds, and he and his family occasionally visited the Todd estate in Lexington.
+{Subject: Lincoln, Predicate: wa, Object: Todd}
+
+--------------------------
+current sentence: By the spring of 1863, Lincoln was ready to recruit black troops in more than token numbers.
+{Subject: Lincoln, Predicate: wa, Object: readi}
+
+--------------------------
+current sentence: Discussions with his cabinet revealed Lincoln planned short-term military control over southern states, until readmission under the control of southern Unionists.
+{Subject: Discussion, Predicate: reveal, Object: {Subject: Lincoln, Predicate: plan, Object: control}}
+
+--------------------------
+current sentence: On November 6, 1860, Lincoln was elected the 16th president of the United States, beating Democrat Stephen A. Douglas, John C. Breckinridge of the Southern Democrats, and John Bell of the new Constitutional Union Party.
+{Subject: Lincoln, Predicate: elect, Object: president}
+
+--------------------------
+current sentence: With Grant in command, Lincoln felt the Union Army could relentlessly pursue a series of coordinated offensives in multiple theaters, and have a top commander who agreed on the use of black troops.
+{Subject: Lincoln, Predicates:  have felt, Objects:  commander {Subject: Armi, Predicate: pursue, Object: seri}}
+
+--------------------------
+current sentence: A 2004 study found that scholars in the fields of history and politics ranked Lincoln number one, while legal scholars placed him second after Washington.
+{Subject: studi, Predicate: found, Object: {Subject: scholar, Predicate: rank, Object: number}}
+
+--------------------------
+current sentence: In 1849, he received a patent for a flotation device for the movement of boats in shallow water.
+{Subject: he, Predicate: receiv, Object: patent}
+
+--------------------------
+current sentence: He regarded the republicanism of the Founding Fathers with an almost religious reverence.
+{Subject: He, Predicate: regard, Object: republicanism}
+
+--------------------------
+current sentence: Despite his inelegant appearance�many in the audience thought him awkward and even ugly�Lincoln demonstrated an intellectual leadership that brought him into the front ranks of the party and into contention for the Republican presidential nomination.
+{Subject: mani, Predicate: thought, Object: appearance}
+
+--------------------------
+current sentence: Subsequently, on April 12, 1861, a Confederate attack on Fort Sumter inspired the North to enthusiastically rally behind the Union in a declaration of war.
+{Subject: attack, Predicate: inspir, Object: North}
+
+--------------------------
+current sentence: During the family's years in Kentucky and Indiana, Thomas Lincoln worked as a farmer, cabinetmaker, and carpenter.
+{Subject: Lincoln, Predicate: work, Object: farmer}
+
+--------------------------
+current sentence: The deaths of their sons had profound effects on both parents.
+{Subject: death, Predicate: had, Object: effect}
+
+--------------------------
+current sentence: Abraham Lincoln suffered from "melancholy", a condition which now is referred to as clinical depression.
+{Subject: Lincoln, Predicate: suffer, Object: condition}
+
+--------------------------
+current sentence: Hooker was routed by Lee at the Battle of Chancellorsville in May, but continued to command his troops for some weeks.
+{Subject: Hooker, Predicate: rout, Object: Lee}
+
+--------------------------
+current sentence: William C. Harris found that Lincoln's "reverence for the Founding Fathers, the Constitution, the laws under it, and the preservation of the Republic and its institutions undergirded and strengthened his conservatism".
+{Subject: Harri, Predicate: found, Object: {Subject: reverence, Predicate: strengthen, Object: null}}
+
+--------------------------
+current sentence: Edward died on February 1, 1850, in Springfield, probably of tuberculosis.
+{Subject: Edward, Predicate: di, Object: Februari}
+
+--------------------------
+current sentence: Lincoln provided Grant with more troops and mobilized his party to renew its support of Grant in the war effort.
+{Subject: Lincoln, Predicates:  mobilize provid, Objects:  parti Grant}
+
+--------------------------
+current sentence: He declared that the deaths of so many brave soldiers would not be in vain, that slavery would end as a result of the losses, and the future of democracy in the world would be assured, that "government of the people, by the people, for the people, shall not perish from the earth".
+{Subject: He, Predicate: declar, Object: {Subject: death, Predicate: brave, Object: {Subject: soldier, Predicate: be, Object: vain}}}
+
+--------------------------
+current sentence: Lincoln demanded that Polk show Congress the exact spot on which blood had been shed and prove that the spot was on American soil.
+{Subject: Lincoln, Predicate: demand, Object: {Subject: Polk, Predicate: show, Object: spot}}
+
+--------------------------
+current sentence: The emphasis shifted away from Lincoln-the-emancipator to an argument that blacks had freed themselves from slavery, or at least were responsible for pressuring the government on emancipation.
+{Subject: emphasi, Predicate: shift, Object: Lincoln-the-emancipate}
+
+--------------------------
+current sentence: William Tecumseh Sherman talked to Lincoln during inauguration week and was "sadly disappointed" at his failure to realize that "the country was sleeping on a volcano" and that the South was preparing for war.
+{Subject: Sherman, Predicate: talk, Object: Lincoln}
+
+--------------------------
+current sentence: As a Whig activist, Lincoln was a spokesman for business interests, favoring high tariffs, banks, internal improvements, and railroads in opposition to the agrarian Democrats.
+{Subject: Lincoln, Predicate: wa, Object: spokesman}
+
+--------------------------
+current sentence: He believed, as most Republicans did in April 1865, that the voting requirements should be determined by the states.
+{Subject: He, Predicate: believ, Object: null}
+
+--------------------------
+current sentence: First inaugural address, 4 March 1861 The President ended his address with an appeal to the people of the South: "We are not enemies, but friends.
+{Subject: address, Predicate: end, Object: address}
+
+--------------------------
+current sentence: In July 1862, the Second Confiscation Act was passed, which set up court procedures that could free the slaves of anyone convicted of aiding the rebellion.
+{Subject: Act, Predicate: pass, Object: {Subject: which, Predicate: set, Object: procedure}}
+
+--------------------------
+current sentence: Late in 1836, Lincoln agreed to a match with Mary if she returned to New Salem.
+{Subject: Lincoln, Predicate: agree, Object: match}
+
+--------------------------
+current sentence: The emancipation of slaves was now part of the national war effort.
+{Subject: emancipate, Predicate: wa, Object: part}
+
+--------------------------
+current sentence: In 1815 a claimant in another land dispute sought to eject the family from the farm.
+{Subject: claimant, Predicate: sought, Object: 1815}
+
+--------------------------
+current sentence: Speaking in his Kentucky accent, with a very powerful voice, he said the Kansas Act had a "declared indifference, but as I must think, a covert real zeal for the spread of slavery.
+{Subject: he, Predicate: said, Object: Act}
+
+--------------------------
+current sentence: John Wilkes Booth was a well-known actor and a Confederate spy from Maryland.
+{Subject: Booth, Predicate: wa, Object: actor}
+
+--------------------------
+current sentence: He owned farms, several town lots and livestock, paid taxes, sat on juries, appraised estates, served on country slave patrols, and guarded prisoners.
+{Subject: He, Predicate: own, Object: {Subject: farm, Predicate: sat, Object: juri}}
+
+--------------------------
+current sentence: One such claim is that he suffered from a rare genetic disorder MEN2b, which manifests with a medullary thyroid carcinoma, mucosal neuromas and a Marfinoid appearance.
+{Subject: claim, Predicate: i, Object: {Subject: he, Predicate: suffer, Object: MEN2b}}
+
+--------------------------
+current sentence: The Pacific Railway Acts of 1862 and 1864 granted federal support for the construction of the United States' First Transcontinental Railroad, which was completed in 1869.
+{Subject: Act, Predicate: grant, Object: support}
+
+--------------------------
+current sentence: He signed the Homestead Act in 1862, making millions of acres of government-held land in the West available for purchase at very low cost.
+{Subject: He, Predicate: sign, Object: Act}
+
+--------------------------
+current sentence: This first attempt at an amendment failed to pass, falling short of the required two-thirds majority on June 15, 1864, in the House of Representatives.
+{Subject: attempt, Predicate: fail, Object: pass}
+
+--------------------------
+current sentence: After the family relocated to Illinois, Abraham became increasingly distant from his father, in part because of his father's lack of education, and occasionally lent him money.
+{Subject: Abraham, Predicates:  lent became, Objects:  monei part}
+
+--------------------------
+current sentence: Yet, if God wills that it continue, until all the wealth piled by the bond-man's 250 years of unrequited toil shall be sunk, and until every drop of blood drawn with the lash, shall be paid by another drawn with the sword, as was said 3,000 years ago, so still it must be said, "the judgments of the Lord, are true and righteous altogether".
+{Subject: null, Predicate: are, Object: true}
+
+--------------------------
+current sentence: Each time a general failed, Lincoln substituted another, until finally Grant succeeded.
+{Subject: Lincoln, Predicate: substitut, Object: another}
+
+--------------------------
+current sentence: Twice a week, Lincoln would meet with his cabinet in the afternoon, and occasionally Mary Lincoln would force him to take a carriage ride because she was concerned he was working too hard.
+{Subject: Lincoln, Predicates:  force meet, Objects:  him week}
+
+--------------------------
+current sentence: As early as the 1850s, a time when most political rhetoric focused on the sanctity of the Constitution, Lincoln redirected emphasis to the Declaration of Independence as the foundation of American political values�what he called the "sheet anchor" of republicanism.
+{Subject: Lincoln, Predicate: redirect, Object: emphasi}
+
+--------------------------
+current sentence: Several significant family events took place during Lincoln's youth in Indiana.
+{Subject: event, Predicate: took, Object: place}
+
+--------------------------
+current sentence: Even so, he often continued to give detailed directions to his generals as Commander-in-Chief.
+{Subject: he, Predicate: continu, Object: give}
+
+--------------------------
+current sentence: Lincoln also supported the Wilmot Proviso, which, if it had been adopted, would have banned slavery in any U.S. territory won from Mexico.
+{Subject: Lincoln, Predicate: support, Object: {Subject: Proviso, Predicate: won, Object: Mexico}}
+
+--------------------------
+current sentence: In 1857-1858, Douglas broke with President James Buchanan, leading to a fight for control of the Democratic Party.
+{Subject: Dougla, Predicate: broke, Object: 1857-1858}
+
+--------------------------
+current sentence: After the Battle of Gettysburg, Lincoln clearly understood that his military decisions would be more effectively carried out by conveying his orders through his War Secretary or his general-in-chief on to his generals, who resented his civilian interference with their own plans.
+{Subject: Lincoln, Predicate: understood, Object: {Subject: decision, Predicate: carri, Object: null}}
+
+--------------------------
+current sentence: Though he never joined the Confederate army, he had contacts with the Confederate secret service.
+{Subject: he, Predicate: had, Object: contact}
+
+--------------------------
+current sentence: Confederate general Jubal Anderson Early began a series of assaults in the North that threatened the Capital.
+{Subject: Earli, Predicate: began, Object: seri}
+
+--------------------------
+current sentence: Republicans linked Lincoln's name to their party.
+{Subject: Republican, Predicate: link, Object: name}
+
+--------------------------
+current sentence: Some eastern Republicans even favored the reelection of Douglas for the Senate in 1858, since he had led the opposition to the Lecompton Constitution, which would have admitted Kansas as a slave state.
+{Subject: Republican, Predicate: favor, Object: reelection}
+
+--------------------------
+current sentence: As a riverboat man, Lincoln initially favored those interests, but ultimately represented whoever hired him.
+{Subject: Lincoln, Predicate: favor, Object: interest}
+
+--------------------------
+current sentence: The U.S. Navy illegally intercepted a British merchant ship, the Trent, on the high seas and seized two Confederate envoys.
+{Subject: Navi, Predicates:  seize intercept, Objects:  envoi ship}
+
+--------------------------
+current sentence: Captain Oliver Wendell Holmes shouted at him, "Get down, you damn fool, before you get shot!"
+{Subject: Holme, Predicate: shout, Object: {Subject: null, Predicate: Get, Object: {Subject: you, Predicate: fool, Object: null}}}
+
+--------------------------
+current sentence: In response to rumors of one, however, the editors of the New York World and the Journal of Commerce published a false draft proclamation which created an opportunity for the editors and others employed at the publications to corner the gold market.
+{Subject: editor, Predicate: publish, Object: proclamate}
+
+--------------------------
+current sentence: Lincoln never made a clear profession of Christian beliefs.
+{Subject: Lincoln, Predicate: made, Object: profession}
+
+--------------------------
+current sentence: Lincoln tried repeatedly to capture the Confederate capital at Richmond.
+{Subject: Lincoln, Predicate: tri, Object: capture}
+
+--------------------------
+current sentence: The Senate campaign featured the seven Lincoln-Douglas debates of 1858, the most famous political debates in American history.
+{Subject: campaign, Predicate: featur, Object: debate}
+
+--------------------------
+current sentence: Lincoln resolved the issue by releasing the two men and war was successfully averted with Britain.
+{Subject: Lincoln, Predicate: resolv, Object: issue}
+
+--------------------------
+current sentence: Historians disagree on who initiated the move.
+{Subject: Historian, Predicate: disagree, Object: null}
+
+--------------------------
+current sentence: : A few more stitches Andy and the good old Union will be mended.
+{Subject: Union, Predicate: mend, Object: null}
+
+--------------------------
+current sentence: The Emancipation Proclamation, issued on September 22, 1862, and put into effect on January 1, 1863, declared free the slaves in 10 states not then under Union control, with exemptions specified for areas already under Union control in two states.
+{Subject: Proclamate, Predicate: declar, Object: slave}
+
+--------------------------
+current sentence: The high point came in 1922 with the dedication of the Lincoln Memorial on the Mall in Washington.
+{Subject: point, Predicate: came, Object: Mall}
+
+--------------------------
+current sentence: Lincoln finished eighth out of 13 candidates , though he received 277 of the 300 votes cast in the New Salem precinct.
+{Subject: Lincoln, Predicate: finish, Object: eighth}
+
+--------------------------
+current sentence: Thomas Lincoln and Nancy Hanks were married on June 12, 1806, in Washington County, and moved to Elizabethtown, Kentucky, following their marriage.
+{Subject: Hank, Predicate: marri, Object: June}
+
+--------------------------
+current sentence: Admitted to the bar in 1836, he moved to Springfield, Illinois, and began to practice law under John T. Stuart, Mary Todd's cousin.
+{Subject: he, Predicate: move, Object: Illinoi}
+
+--------------------------
+current sentence: Judicial appointments Main article: List of federal judges appointed by Abraham Lincoln Supreme Court appointments Noah Haynes Swayne - 1862 Samuel Freeman Miller - 1862 David Davis - 1862 Stephen Johnson Field - 1863 Salmon Portland Chase - 1864 Salmon Portland Chase was Lincoln's choice to be Chief Justice of the United States.
+{Subject: appointment, Predicate: wa, Object: choice}
+
+--------------------------
+current sentence: Lincoln closely supervised the war effort, especially the selection of top generals, including his most successful general, Ulysses S. Grant.
+{Subject: Lincoln, Predicate: supervis, Object: effort}
+
+--------------------------
+current sentence: In that month, Lincoln discussed a draft of the Emancipation Proclamation with his cabinet.
+{Subject: Lincoln, Predicate: discuss, Object: draft}
+
+--------------------------
+current sentence: Based on this evidence, Armstrong was acquitted.
+{Subject: Armstrong, Predicate: acquit, Object: null}
+
+--------------------------
+current sentence: He left most diplomacy appointments and other foreign policy matters to his Secretary of State, William Seward.
+{Subject: He, Predicate: left, Object: matter}
+
+--------------------------
+current sentence: Of special importance were Tennessee and Arkansas, where Lincoln appointed Generals Andrew Johnson and Frederick Steele as military governors, respectively.
+{Subject: Arkansa, Predicate: were, Object: importance}
+
+Total Sentence Number: 671
+Parsed Sentence Number: 666
+You have parsed 99.25 %

@@ -67,7 +67,9 @@ public class ParallelInfo implements IInfo {
         StringBuilder sb = new StringBuilder();
         for (IInfo object : this.parallelObjectInfo) {
             sb.append(" ");
-            sb.append(object.toString());
+            if (object != null) {
+                sb.append(object.toString());
+            }
         }
         return sb.toString();
     }
