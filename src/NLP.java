@@ -3,7 +3,7 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.util.*;
 
-import com.sun.org.apache.bcel.internal.generic.IINC;
+//import com.sun.org.apache.bcel.internal.generic.IINC;
 import edu.stanford.nlp.dcoref.CorefChain;
 import edu.stanford.nlp.dcoref.CorefCoreAnnotations.CorefChainAnnotation;
 import edu.stanford.nlp.ling.*;
@@ -166,8 +166,32 @@ public class NLP {
 
         pw.close();
     }
+    
+    public static Map<String, IInfo> readFromDoc(String fileName) throws IOException {
+    	BufferedReader reader = new BufferedReader(new FileReader(fileName));
+    	
+    	Map <String, IInfo> map = new HashMap<String, IInfo>();
+    	String sentence = "";
+    	String line = reader.readLine();
+    	while (line != null) {
+    		if (line.startsWith("current sentence: ")) {
+    			sentence = line.substring(18);
+    		}
+    		else if (line.startsWith("{")) {
+    			map.put(sentence, readInfo(line));
+    		}
+    	}
+    	
+    	reader.close();
+    	return map;
+    }
 
-    public static Info processPhrase(SemanticGraph dependencies, IndexedWord root) {
+    public static IInfo readInfo(String line) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public static Info processPhrase(SemanticGraph dependencies, IndexedWord root) {
         // type of root
         String type = root.tag();
         System.out.println("type: " + type);
