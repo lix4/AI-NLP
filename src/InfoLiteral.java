@@ -19,7 +19,8 @@ public class InfoLiteral implements IInfo {
 	public void setWord(String word) {
 		this.word = word;
 	}
-	
+
+	@Override
 	public String toString() {
 		return this.word;
 	}

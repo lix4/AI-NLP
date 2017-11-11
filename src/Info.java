@@ -10,11 +10,11 @@ public class Info implements IInfo {
         this.predicate = new InfoLiteral(predicate);
         this.object = new InfoLiteral(object);
     }
-    
+
     public Info(IInfo subj, IInfo pred, IInfo obj) {
-    	this.subject = subj;
-    	this.predicate = pred;
-    	this.object = obj;
+        this.subject = subj;
+        this.predicate = pred;
+        this.object = obj;
     }
 
     public IInfo getSubject() {
@@ -40,23 +40,24 @@ public class Info implements IInfo {
     public void setObject(IndexedWord object) {
         this.object = new InfoLiteral(object);
     }
-    
+
+    @Override
     public String toString() {
-    	return "{Subject: " + subject + ", Predicate: " + predicate + 
-    			", Object: " + object + "}";
-    }
-    
-    public String originalText() {
-    	return this.toString();
+        return "{Subject: " + subject + ", Predicate: " + predicate +
+                ", Object: " + object + "}";
     }
 
-	@Override
-	public boolean equals(IInfo other) {
-		if (!(other instanceof Info)) {
-			return false;
-		}
-		Info info = (Info) other;
-		return this.subject.equals(info.getSubject()) && this.object.equals(info.getObject()) &&
-				this.predicate.equals(info.getPredicate());
-	}
+    public String originalText() {
+        return this.toString();
+    }
+
+    @Override
+    public boolean equals(IInfo other) {
+        if (!(other instanceof Info)) {
+            return false;
+        }
+        Info info = (Info) other;
+        return this.subject.equals(info.getSubject()) && this.object.equals(info.getObject()) &&
+                this.predicate.equals(info.getPredicate());
+    }
 }

@@ -16,14 +16,14 @@ public class Search {
 	
 	private static StanfordCoreNLP pipeline;
 
-	public static boolean evalStatement(String statement, Set<Info> processedText) {
-		Info processed = processStatement(statement);
+	public static boolean evalStatement(String statement, Set<IInfo> processedText) {
+		IInfo processed = processStatement(statement);
 		return evalStatement(processed, processedText);
 	}
 	
-	public static boolean evalStatement(Info statement, Set<Info> processedText) {
+	public static boolean evalStatement(IInfo statement, Set<IInfo> processedText) {
         // perform the search
-        for (Info info : processedText) {
+        for (IInfo info : processedText) {
         	if (statement.equals(info)) {
         		return true;
         	}
@@ -31,11 +31,11 @@ public class Search {
 		return false;
 	}
 	
-	public static Info processStatement(String statement) {
+	public static IInfo processStatement(String statement) {
 		return processStatement(statement, pipeline);
 	}
 	
-	public static Info processStatement(String statement, StanfordCoreNLP coreNLP) {
+	public static IInfo processStatement(String statement, StanfordCoreNLP coreNLP) {
 		Annotation ann = new Annotation(statement);
 		coreNLP.annotate(ann);
 		
@@ -55,12 +55,12 @@ public class Search {
 		
         Scanner scanner = new Scanner(System.in);
 		String text = "q";
-		Set<Info> processed = new HashSet<Info>();
+		Set<IInfo> processed = new HashSet<IInfo>();
 		do {
 			System.out.print("Enter a statement for the text (or Q to quit):\n");
 			text = scanner.nextLine();
 			if (!text.equalsIgnoreCase("q")) {
-				Info processedText = processStatement(text);
+				IInfo processedText = processStatement(text);
 				System.out.println(processedText);
 				processed.add(processedText);
 			}
@@ -68,7 +68,7 @@ public class Search {
 		
 		System.out.println("Enter a statement to search the text for:");
 		String searchTest = scanner.nextLine();
-		Info searchInfo = processStatement(searchTest);
+		IInfo searchInfo = processStatement(searchTest);
 		if (evalStatement(searchInfo, processed)) {
 			System.out.println("Match successfully found");
 		}

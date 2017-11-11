@@ -28,7 +28,7 @@ public class NLP {
      * @param args
      */
     public static void main(String[] args) {
-        Map<String, Info> infoMap = new HashMap<>();
+        Map<String, IInfo> infoMap = new HashMap<>();
 
         Properties props = new Properties();
         props.put("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
@@ -86,7 +86,8 @@ public class NLP {
         String text = sb.toString();
 
         Document doc = new Document(text);
-        System.out.println(doc.sentences().size());
+        int totalSentNum = doc.sentences().size();
+        int count = 0;
         for (Sentence sent : doc.sentences()) {
             System.out.println();
             System.out.println("current sentence:");
@@ -126,7 +127,10 @@ public class NLP {
                 // get root of parse graph
                 IndexedWord root = dependencies.getFirstRoot();
 
-                Info extracted = processPhrase(dependencies, root);
+                IInfo extracted = processPhrase(dependencies, root);
+                if (extracted != null) {
+                    count++;
+                }
                 infoMap.put(sent.text(), extracted);
 
 
@@ -136,16 +140,15 @@ public class NLP {
             // Each chain stores a set of mentions that link to each other,
             // along with a method for getting the most representative mention
             // Both sentence and token offsets start at 1!
-            Map<Integer, CorefChain> graph = document.get(CorefChainAnnotation.class);
-            System.out.println();
-            System.out.println(graph);
+//            Map<Integer, CorefChain> graph = document.get(CorefChainAnnotation.class);
+//            System.out.println();
+//            System.out.println(graph);
         }
 
-        writeIntoDoc(infoMap);
+        writeIntoDoc(infoMap, count, totalSentNum);
     }
 
-    public static void writeIntoDoc(Map<String, Info> map) {
-        File file = new File("C:/Users/Me/Desktop/directory/file.txt");
+    public static void writeIntoDoc(Map<String, IInfo> map, int count, int totalSentNum) {
         PrintWriter pw = null;
         try {
             pw = new PrintWriter("result.txt");
@@ -156,18 +159,27 @@ public class NLP {
         pw.println("Result");
         pw.println();
 
-        Set<Map.Entry<String, Info>> entrySet = map.entrySet();
-        for (Map.Entry<String, Info> entry : entrySet) {
+        Set<Map.Entry<String, IInfo>> entrySet = map.entrySet();
+        for (Map.Entry<String, IInfo> entry : entrySet) {
             pw.println("--------------------------");
             pw.println("current sentence: " + entry.getKey());
-            pw.println(entry.getValue().toString());
+            if (entry.getValue() != null) {
+                System.out.println(entry.getValue().toString());
+                pw.println(entry.getValue().toString());
+            } else {
+                pw.println("Cannot handle this sentence");
+            }
             pw.println();
         }
 
+        pw.println(String.format("Total Sentence Number: %d", totalSentNum));
+        pw.println(String.format("Parsed Sentence Number: %d", count));
+        double percent = count / totalSentNum;
+        pw.println(String.format("You have parsed %.2f %%", percent * 100));
         pw.close();
     }
 
-    public static Info processPhrase(SemanticGraph dependencies, IndexedWord root) {
+    public static IInfo processPhrase(SemanticGraph dependencies, IndexedWord root) {
         // type of root
         String type = root.tag();
         System.out.println("type: " + type);
@@ -187,7 +199,12 @@ public class NLP {
         }
     }
 
-    static public Info processAdjectivePhrase(SemanticGraph dependencies, IndexedWord root) {
+    private static IInfo processAdverbPhrase(SemanticGraph dependencies, IndexedWord root) {
+        List<Pair<GrammaticalRelation, IndexedWord>> s = dependencies.childPairs(root);
+        return null;
+    }
+
+    static public IInfo processAdjectivePhrase(SemanticGraph dependencies, IndexedWord root) {
         List<Pair<GrammaticalRelation, IndexedWord>> s = dependencies.childPairs(root);
 
         IInfo subject = null;
@@ -219,7 +236,7 @@ public class NLP {
     }
 
     // Processes: {This, that} one?
-    static public Info processDeterminer(SemanticGraph dependencies, IndexedWord root) {
+    static public IInfo processDeterminer(SemanticGraph dependencies, IndexedWord root) {
         List<Pair<GrammaticalRelation, IndexedWord>> s = dependencies.childPairs(root);
 
         System.out.println("Identity of object: " + root.originalText().toLowerCase());
@@ -227,7 +244,7 @@ public class NLP {
     }
 
     //Processes: {That, this, the} {block, sphere}
-    static public Info processNounPhrase(SemanticGraph dependencies, IndexedWord root) {
+    static public IInfo processNounPhrase(SemanticGraph dependencies, IndexedWord root) {
 //        List<Pair<GrammaticalRelation, IndexedWord>> s = dependencies.childPairs(root);
 
 
@@ -282,7 +299,7 @@ public class NLP {
     }
 
     // Processes: {Pick up, put down} {that, this} {block, sphere}
-    static public Info processVerbPhrase(SemanticGraph dependencies, IndexedWord root) {
+    static public IInfo processVerbPhrase(SemanticGraph dependencies, IndexedWord root) {
         List<Pair<GrammaticalRelation, IndexedWord>> s = dependencies.childPairs(root);
         Pair<GrammaticalRelation, IndexedWord> prt = s.get(0);
 //        Pair<GrammaticalRelation, IndexedWord> dobj = s.get(1);
@@ -297,6 +314,8 @@ public class NLP {
         IInfo object = null;
         IInfo subject = null;
         IInfo predicate = new InfoLiteral(root);
+        // will only be used if the sentence has multiple predicates
+        ParallelInfo pi = new ParallelInfo();
 
         String quantifier = null;
         Boolean TopLevelNegation = false;
@@ -306,6 +325,17 @@ public class NLP {
             // noun subject
             if (item.first.toString().startsWith("nsubj")) {
                 subject = new InfoLiteral(item.second);
+            }
+
+            // parallel predicates
+            if (item.first.toString().startsWith("conj:and")) {
+                pi.addNewPredicate(new InfoLiteral(item.second));
+                List<Pair<GrammaticalRelation, IndexedWord>> sub = dependencies.childPairs(item.second);
+                for (Pair<GrammaticalRelation, IndexedWord> subItem : sub) {
+                    if (subItem.first.toString().startsWith("dobj")) {
+                        pi.addNewObject(new InfoLiteral(subItem.second));
+                    }
+                }
             }
 
             // clausal subject
@@ -339,8 +369,16 @@ public class NLP {
             }
         }
 
+        pi.setSubject(subject);
+        pi.addNewPredicate(predicate);
+        pi.addNewObject(object);
+
+
+        if (pi.parallel()) {
+            return pi;
+        }
         System.out.println("Subject: " + subject);
-        System.out.println("Action: " + predicate);
+        System.out.println("Predicate: " + predicate);
         System.out.println("Object: " + object);
         return new Info(subject, predicate, object);
     }
