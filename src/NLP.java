@@ -3,6 +3,7 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.util.*;
 
+import com.sun.org.apache.bcel.internal.generic.IINC;
 import edu.stanford.nlp.dcoref.CorefChain;
 import edu.stanford.nlp.dcoref.CorefCoreAnnotations.CorefChainAnnotation;
 import edu.stanford.nlp.ling.*;
@@ -177,28 +178,52 @@ public class NLP {
             case "NN":
                 return processNounPhrase(dependencies, root);
             case "DT":
-//                processDeterminer(dependencies, root);
-                break;
+                return processDeterminer(dependencies, root);
             case "JJ":
-//                processAdjectivePhrase();
-                break;
+                return processAdjectivePhrase(dependencies, root);
             default:
                 System.out.println("Cannot identify sentence structure.");
                 return null;
         }
-        return null;
     }
 
-    static public void processAdjectivePhrase(SemanticGraph dependencies, IndexedWord root) {
+    static public Info processAdjectivePhrase(SemanticGraph dependencies, IndexedWord root) {
         List<Pair<GrammaticalRelation, IndexedWord>> s = dependencies.childPairs(root);
 
+        IInfo subject = null;
+        IInfo predicate = null;
+        IInfo predicative = new InfoLiteral(root);
+
+        for (Pair<GrammaticalRelation, IndexedWord> item : s) {
+            if (item.first.toString().equals("cop")) {
+                System.out.println("Predicate: " + item.second.originalText());
+                predicate = new InfoLiteral(item.second);
+            }
+
+            // noun subject
+            if (item.first.toString().startsWith("nsubj")) {
+                subject = new InfoLiteral(item.second);
+                System.out.println("Subject: " + item.second.originalText());
+            }
+
+            // clausal subject
+            if (item.first.toString().startsWith("csubj")) {
+                subject = processPhrase(dependencies, item.second);
+            }
+        }
+
+        System.out.println("subject: " + subject);
+        System.out.println("predicate: " + predicate);
+        System.out.println("predicative: " + predicative);
+        return new Info(subject, predicate, predicative);
     }
 
     // Processes: {This, that} one?
-    static public void processDeterminer(SemanticGraph dependencies, IndexedWord root) {
+    static public Info processDeterminer(SemanticGraph dependencies, IndexedWord root) {
         List<Pair<GrammaticalRelation, IndexedWord>> s = dependencies.childPairs(root);
 
         System.out.println("Identity of object: " + root.originalText().toLowerCase());
+        return null;
     }
 
     //Processes: {That, this, the} {block, sphere}
