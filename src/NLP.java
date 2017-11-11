@@ -83,7 +83,7 @@ public class NLP {
             }
         }
         String text = sb.toString();
-        
+
         Document doc = new Document(text);
         System.out.println(doc.sentences().size());
         for (Sentence sent : doc.sentences()) {
@@ -124,9 +124,9 @@ public class NLP {
 
                 // get root of parse graph
                 IndexedWord root = dependencies.getFirstRoot();
-                
+
                 Info extracted = processPhrase(dependencies, root);
-                //infoMap.put(sent.text(), extracted);
+                infoMap.put(sent.text(), extracted);
 
 
             }
@@ -139,11 +139,36 @@ public class NLP {
             System.out.println();
             System.out.println(graph);
         }
+
+        writeIntoDoc(infoMap);
     }
-    
-    public static Info processPhrase(SemanticGraph dependencies, IndexedWord root) {    	
-    	// type of root
-    	String type = root.tag();
+
+    public static void writeIntoDoc(Map<String, Info> map) {
+        File file = new File("C:/Users/Me/Desktop/directory/file.txt");
+        PrintWriter pw = null;
+        try {
+            pw = new PrintWriter("result.txt");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        pw.println("Result");
+        pw.println();
+
+        Set<Map.Entry<String, Info>> entrySet = map.entrySet();
+        for (Map.Entry<String, Info> entry : entrySet) {
+            pw.println("--------------------------");
+            pw.println("current sentence: " + entry.getKey());
+            pw.println(entry.getValue().toString());
+            pw.println();
+        }
+
+        pw.close();
+    }
+
+    public static Info processPhrase(SemanticGraph dependencies, IndexedWord root) {
+        // type of root
+        String type = root.tag();
         System.out.println("type: " + type);
         String generalType = type.substring(0, 2);
         switch (generalType) {
@@ -156,7 +181,7 @@ public class NLP {
                 break;
             case "JJ":
 //                processAdjectivePhrase();
-            	break;
+                break;
             default:
                 System.out.println("Cannot identify sentence structure.");
                 return null;
@@ -190,7 +215,7 @@ public class NLP {
         IInfo subject = null;
         IInfo predicate = null;
         IInfo object = new InfoLiteral(root);
-        
+
         List<Pair<GrammaticalRelation, IndexedWord>> p = dependencies.childPairs(root);
         System.out.println("Identity of object: " + root.originalText().toLowerCase());
         System.out.println("Type of object: " + p.get(0).second.originalText().toLowerCase());
@@ -200,16 +225,16 @@ public class NLP {
                 System.out.println("Predicate: " + item.second.originalText());
                 predicate = new InfoLiteral(item.second);
             }
-            
+
             // noun subject
             if (item.first.toString().startsWith("nsubj")) {
                 subject = new InfoLiteral(item.second);
                 System.out.println("Subject: " + item.second.originalText());
             }
-            
+
             // clausal subject
             if (item.first.toString().startsWith("csubj")) {
-            	subject = processPhrase(dependencies, item.second);
+                subject = processPhrase(dependencies, item.second);
             }
         }
 
@@ -247,45 +272,45 @@ public class NLP {
         IInfo object = null;
         IInfo subject = null;
         IInfo predicate = new InfoLiteral(root);
-        
+
         String quantifier = null;
         Boolean TopLevelNegation = false;
         Boolean PredicateLevelNegation = false;
 
         for (Pair<GrammaticalRelation, IndexedWord> item : s) {
-        	// noun subject
+            // noun subject
             if (item.first.toString().startsWith("nsubj")) {
                 subject = new InfoLiteral(item.second);
             }
-            
+
             // clausal subject
             if (item.first.toString().startsWith("csubj")) {
-            	subject = processPhrase(dependencies, item.second);
+                subject = processPhrase(dependencies, item.second);
             }
-            
+
             if (item.first.toString().equals("neg")) {
                 PredicateLevelNegation = true;
             }
-            
+
             // noun object
             if (item.first.toString().equals("dobj") || item.first.toString().equals("iobj")) {
                 object = new InfoLiteral(item.second);
             }
-            
+
             // adjective object
-            if (object == null &&(item.first.toString().equals("acomp") || 
-            		item.first.toString().equals("xcomp"))) {
-            	object = new InfoLiteral(item.second);
+            if (object == null && (item.first.toString().equals("acomp") ||
+                    item.first.toString().equals("xcomp"))) {
+                object = new InfoLiteral(item.second);
             }
-            
+
             // clausal object
             if (item.first.toString().equals("ccomp")) {
-            	object = processPhrase(dependencies, item.second);
+                object = processPhrase(dependencies, item.second);
             }
-            
+
             // modifier as object
             if (object == null && item.first.toString().startsWith("nmod")) {
-            	object = new InfoLiteral(item.second);
+                object = new InfoLiteral(item.second);
             }
         }
 
@@ -294,7 +319,6 @@ public class NLP {
         System.out.println("Object: " + object);
         return new Info(subject, predicate, object);
     }
-    
-    
+
 
 }
