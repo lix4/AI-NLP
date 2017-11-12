@@ -198,9 +198,67 @@ public class NLP {
     	return map;
     }
 
+    // currently assumes that there actually is a properly encoded IInfo here
     public static IInfo readInfo(String line) {
-		// TODO Auto-generated method stub
-		return null;
+		String[] words = line.split(" ");
+		Info info = new Info();
+		ParallelInfo pInfo = new ParallelInfo();
+		boolean parallel;
+		
+		IInfo subj;
+		if (!words[1].startsWith("{")) {
+			// subject is not a clause
+			subj = new InfoLiteral(words[1]);
+		} else {
+			String subject = line.replaceFirst(words[0] + " ", "");
+			subject = subject.substring(0, subject.indexOf("}") + 1);
+			subj = readInfo(subject);
+		}
+		line = line.substring(line.indexOf("Predicate"));
+		words = line.split(" ");
+		
+		if (words[0].equals("Predicates:")) {
+			// this is a ParallelInfo
+			parallel = true;
+			pInfo.setSubject(subj);
+			for (int i=1; !words[i].startsWith("Objects:"); i++) {
+				pInfo.addNewPredicate(new InfoLiteral(words[i]));
+			}
+		} else {
+			parallel = false;
+			info.setSubject(subj);
+			info.setPredicate(new InfoLiteral(words[1]));
+		}
+		line = line.substring(line.indexOf("Object"));
+		words = line.split(" ");
+		
+		if (parallel) {
+			for (int i=1; i < words.length-1; i++) {
+				if (words[i].startsWith("{")) {
+					// clausal object
+					int j;
+					String object = "";
+					for (j=i; !words[j].startsWith("}"); j++) {
+						object +=" " + words[j];
+					}
+					pInfo.addNewObject(readInfo(object + " }"));
+					i = j;
+				} else {
+					pInfo.addNewObject(new InfoLiteral(words[i]));
+				}
+			}
+			return pInfo;
+		} else {
+			if (!words[1].startsWith("{")) {
+				// object is not a clause
+				info.setObject(new InfoLiteral(words[1]));
+			} else {
+				String object = line.replaceFirst(words[0] + " ", "");
+				object = object.substring(0, object.indexOf("}") + 1);
+				info.setObject(readInfo(object));
+			}
+			return info;
+		}
 	}
 
 

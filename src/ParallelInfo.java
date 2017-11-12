@@ -59,8 +59,8 @@ public class ParallelInfo implements IInfo {
 
     @Override
     public String toString() {
-        return "{Subject: " + subject + ", Predicates: " + printPredicates() +
-                ", Objects: " + printObjects() + "}";
+        return "{Subject: " + subject + " Predicates: " + printPredicates() +
+                " Objects: " + printObjects() + " }";
     }
 
     private String printObjects() {
@@ -75,7 +75,20 @@ public class ParallelInfo implements IInfo {
     }
 
     @Override
+    // may not actually be equality, but more useful for the search procedure
     public boolean equals(IInfo other) {
-        return false;
+        if (!(other instanceof ParallelInfo)) {
+        	return false;
+        }
+        ParallelInfo pInfo = (ParallelInfo) other;
+        if (!this.subject.equals(pInfo.getSubject()))
+        	return false;
+        List<IInfo> otherPreds = pInfo.getParallelPredicateInfo();
+        if (!otherPreds.containsAll(parallelPredicateInfo))
+        	return false;
+        List<IInfo> otherObjs = pInfo.getParallelObjectInfo();
+        if (!otherObjs.containsAll(parallelObjectInfo))
+        	return false;
+        return true;
     }
 }
