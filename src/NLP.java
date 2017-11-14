@@ -60,7 +60,7 @@ public class NLP {
         //Annotation document = new Annotation(text);
 //        System.out.println(text);
 
-
+        long startTime = System.currentTimeMillis();
         InputStream is = null;
         try {
             is = new FileInputStream("src/lincoln.txt");
@@ -146,6 +146,12 @@ public class NLP {
         }
 
         writeIntoDoc(infoMap, count, totalSentNum);
+        long finishTime = System.currentTimeMillis();
+        long elapsed = finishTime - startTime;
+        long minutes = elapsed / 60000;
+        long seconds = (elapsed % 60000) / 1000;
+        long millis = elapsed % 1000;
+        System.out.println("Elapsed time: " + minutes + ":" + seconds + ":" + millis);
     }
 
     public static void writeIntoDoc(Map<String, IInfo> map, int count, int totalSentNum) {
